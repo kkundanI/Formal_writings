@@ -20,11 +20,27 @@
         li {
             margin-bottom: 0.5em;
         }
+
+        .back-button {
+      margin-bottom: 10px;
+      background-color: #555;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .back-button:hover {
+      background-color: #333;
+    }
     </style>
 </head>
 <body>
+    <button class="back-button" onclick="goBack()">Back</button>
+  
     <h1>Resumes/Curriculum Vitae (CV):</h1>
-    <p>A resume or CV is a formal document that outlines an individual's education, work experience, skills, and qualifications.
+     <p>A resume or CV is a formal document that outlines an individual's education, work experience, skills, and qualifications.
         It is used for job applications and provides a summary of a person's professional background.</p>
 
     <h1>Types of Resumes</h1>
@@ -58,5 +74,10 @@
             </ol>
         </li>
     </ol>
+    <script>
+        function goBack() {
+         window.history.back();
+       }
+     </script>
 </body>
 </html>
