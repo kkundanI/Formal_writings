@@ -24,10 +24,25 @@
         .subsection {
             margin-left: 20px;
         }
+
+        .back-button {
+      margin-bottom: 10px;
+      background-color: #555;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .back-button:hover {
+      background-color: #333;
+    }
     </style>
 </head>
 <body>
     <h1>Minutes of Meetings : </h1>
+    <button class="back-button" onclick="goBack()">Back</button>
     <p> Minutes are written records of the proceedings and discussions that occur during meetings. 
         They provide an overview of the topics discussed, decisions made, and actions assigned to participants.</p>
     <h2>Types of Minutes</h2>
@@ -64,5 +79,10 @@
             </ol>
         </li>
     </ol>
+    <script>
+        function goBack() {
+         window.history.back();
+       }
+     </script>
 </body>
 </html>
