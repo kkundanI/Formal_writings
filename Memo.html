@@ -29,10 +29,25 @@
             list-style-type: decimal;
             margin-left: 1.5em;
         }
+
+        .back-button {
+      margin-bottom: 10px;
+      background-color: #555;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .back-button:hover {
+      background-color: #333;
+    }
     </style>
 </head>
 <body>
     <h1>Memorandum :</h1>
+    <button class="back-button" onclick="goBack()">Back</button>
     <p>Memos are concise written communications within an organization.
          They are typically used to convey important information, make announcements,
           request actions, or provide updates to colleagues or team members.</p>
@@ -84,5 +99,10 @@
             </ol>
         </li>
     </ol>
+    <script>
+        function goBack() {
+         window.history.back();
+       }
+     </script>
 </body>
 </html>
