@@ -15,10 +15,25 @@
     li {
       margin-bottom: 10px;
     }
+
+    .back-button {
+      margin-bottom: 10px;
+      background-color: #555;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .back-button:hover {
+      background-color: #333;
+    }
   </style>
 </head>
 <body>
     <h1>Policies And Procedures:</h1>
+    <button class="back-button" onclick="goBack()">Back</button>
      <p>Formal policies and procedures are written documents that establish guidelines, rules, and protocols within an organization. 
         They outline expectations, processes, and responsibilities for employees or members to follow.</p>
   <h1>Types of Policies</h1>
@@ -64,5 +79,10 @@
       </ol>
     </li>
   </ol>
+  <script>
+    function goBack() {
+     window.history.back();
+   }
+ </script>
 </body>
 </html>
