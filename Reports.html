@@ -29,9 +29,25 @@
         .sub-types {
             margin-left: 1.5em;
         }
+
+        .back-button {
+      margin-bottom: 10px;
+      background-color: #555;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .back-button:hover {
+      background-color: #333;
+    }
     </style>
 </head>
 <body>
+    
+    <button class="back-button" onclick="goBack()">Back</button>
     <h1>Reports :</h1>
     <p>Formal reports present detailed information, analysis, and findings on a specific topic or issue.
          They often follow a structured format and may include an executive summary, introduction, methodology,
@@ -85,7 +101,9 @@
         </li>
     </ol>
     <script>
-        // Add your JavaScript code here
+     function goBack() {
+      window.history.back();
+    }
     </script>
 </body>
 </html>
