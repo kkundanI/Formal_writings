@@ -5,20 +5,383 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Web Page</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+      // JavaScript to copy the text when the button is clicked
+      function copyText() {
+        var reportText = document.getElementById('report-text');
+        var range = document.createRange();
+        range.selectNode(reportText);
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        alert('Text copied!');
+      }
+    </script>
 </head>
-<body>
+<body style="background-color:  #303030;">
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            <a href="index.html" target="_blank" style="color: #efefef;">Home</a>
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+          <a href='Reports.html' >Reports</a>
+          <a href='Memo.html' >Memorandum</a>
+          <a href='Resume.html'  >Resume</a>
+          <a href='Minutes.html'  >Minutes</a>
+          <a href='Procedure_and_policies.html'  >Procedure And Policies</a>
+          <a href='Thesis_and_Dissertation.html' >Thesis and Dissertation</a>
+          <a href='Notice.html' >Notice</a>
+        </div>
+      
     <h1>Hello, World!</h1>
     <p>Welcome to my webpage.</p>
     <button class="button-link" onclick="location.href='Reports.html'">Reports</button>
+    <div class="templt">
+      <div class="container">
+          <div class="header">
+              <h1 class="heading">Report</h1>
+              <div class="copy-text-container">
+                <div class="copy-text" onclick="copyText()">Copy Text</div>
+              </div>
+            </div>
+          <div class="header">
+            <h1 class="title">Report Title</h1>
+            <p class="subtitle">Report Subtitle or Description</p>
+          </div>
+          <div class="section">
+            <h2 class="section-title">Executive Summary</h2>
+            <p class="section-content">A brief summary of the report findings and key highlights.</p>
+          </div>
+          <div class="section">
+            <h2 class="section-title">Introduction</h2>
+            <p class="section-content">An introduction to the topic or subject of the report.</p>
+          </div>
+          <div class="section">
+            <h2 class="section-title">Methodology</h2>
+            <p class="section-content">Explanation of the research or analysis methods used in the report.</p>
+          </div>
+          <div class="section">
+            <h2 class="section-title">Findings</h2>
+            <p class="section-content">Detailed findings or results of the research or analysis.</p>
+          </div>
+          <div class="section">
+            <h2 class="section-title">Conclusion</h2>
+            <p class="section-content">Summary and conclusion based on the findings of the report.</p>
+          </div>
+          <div class="section">
+            <h2 class="section-title">Recommendations</h2>
+            <p class="section-content">Specific recommendations based on the findings and conclusion.</p>
+          </div>
+          <div class="section">
+            <h2 class="section-title">Appendix</h2>
+            <p class="section-content">Additional supporting information, data, or references.</p>
+          </div>
+          <div class="section">
+            <h2 class="section-title">References</h2>
+            <p class="section-content">List of sources or references cited in the report.</p>
+          </div>
+          <div class="section">
+            <h2 class="section-title">Acknowledgements</h2>
+            <p class="section-content">Acknowledgements to individuals or organizations that contributed to the report.</p>
+          </div>
+        </div>
+  </div><br><hr><br><br>
+    
     <button class="button-link" onclick="location.href='Memo.html'">Memorandum</button>
+    <div class="templt">
+      <div class="container">
+        <div class="header">
+          <h1 class="heading">Memorandum</h1>
+          <div class="copy-text-container">
+            <div class="copy-text" onclick="copyText()">Copy Text</div>
+          </div>
+        </div>
+        <pre id="report-text">
+            <pre id="memorandum-text">
+                Date: [Insert Date]
+                From: [Your Name]
+                To: [Recipient(s)]
+          
+                Subject: [Subject of the Memorandum]
+          
+                Dear [Recipient(s)],
+          
+                I am writing this memorandum to inform you about [purpose/reason for the memorandum]. This memorandum contains important information and instructions regarding [subject of the memorandum]. Please read it carefully and take the necessary action as instructed.
+          
+                In the body of the memorandum, provide detailed information, instructions, or announcements related to the subject matter. Organize the content into paragraphs or bullet points for better readability. Ensure that the language used is clear, concise, and easily understood by the recipients.
+          
+                To conclude, [summarize the key points of the memorandum]. If there are any specific actions required from the recipients, clearly state them and provide any relevant deadlines or contact information. We kindly request your prompt attention and cooperation in this matter.
+          
+                Thank you.
+          
+                Sincerely,
+                [Your Name]
+                [Your Position/Designation]
+                [Organization Name]
+          
+                [Contact Information: Phone number, email, address, etc.]
+              </pre>
+        </pre>
+      </div></div><br><hr><br><br>
+      
     <button class="button-link" onclick="location.href='Resume.html'">Resume</button>
+    <div class="templt">
+      <div class="container">
+          <div class="header">
+              <h1 class="heading">Resume</h1>
+              <div class="copy-text-container">
+                <div class="copy-text" onclick="copyText()">Copy Text</div>
+              </div>
+            </div>
+          <div class="header">
+            <h1 class="name">John Doe</h1>
+            <p class="contact-info">123 Main Street, Anytown, USA | johndoe@email.com | (123) 456-7890</p>
+          </div>
+          <div class="section">
+            <h2 class="section-title">Summary</h2>
+            <p class="section-content">Highly motivated and detail-oriented professional with experience in [specific field/industry]. Skilled in [relevant skills]. Strong problem-solving and communication abilities. Proven track record of [achievements or accomplishments].</p>
+          </div>
+          <div class="section">
+            <h2 class="section-title">Experience</h2>
+            <p class="section-content">
+              <strong>Company Name</strong> | City, State<br>
+              <em>Position Title</em> | Start Date - End Date<br>
+              - Description of responsibilities and achievements in bullet points<br>
+              - Description of responsibilities and achievements in bullet points<br>
+            </p>
+          </div>
+          <div class="section">
+            <h2 class="section-title">Education</h2>
+            <p class="section-content">
+              <strong>University Name</strong> | City, State<br>
+              <em>Degree Earned</em> | Graduation Year<br>
+            </p>
+          </div>
+          <div class="skills">
+            <h2 class="skills-title">Skills</h2>
+            <ul class="skills-list">
+              <li class="skills-list-item">Skill 1</li>
+              <li class="skills-list-item">Skill 2</li>
+              <li class="skills-list-item">Skill 3</li>
+              <li class="skills-list-item">Skill 4</li>
+            </ul>
+          </div>
+        </div>
+  </div><br><hr><br><br>
+    
     <button class="button-link" onclick="location.href='Minutes.html'">Minutes</button>
+    <div class="templt">
+      <div class="container">
+        <div class="header">
+            <h1 class="heading">Minutes</h1>
+            <div class="copy-text-container">
+              <div class="copy-text" onclick="copyText()">Copy Text</div>
+            </div>
+          </div>
+        <pre id="minutes-text">
+          Meeting Date: [Insert Date]
+          Meeting Time: [Insert Time]
+          Meeting Location: [Insert Location]
+    
+          Attendees:
+          - [List of Attendees]
+    
+          Agenda Items:
+          1. [Agenda Item 1]
+             - [Discussion or Actions]
+    
+          2. [Agenda Item 2]
+             - [Discussion or Actions]
+    
+          ...
+    
+          Discussion Points and Decisions:
+          - [Discussion Point 1]
+            - [Decision or Outcome]
+    
+          - [Discussion Point 2]
+            - [Decision or Outcome]
+    
+          ...
+    
+          Action Items:
+          - [Action Item 1]
+            - [Responsible Person]
+            - [Deadline]
+    
+          - [Action Item 2]
+            - [Responsible Person]
+            - [Deadline]
+    
+          ...
+    
+          Next Meeting:
+          - Date: [Insert Next Meeting Date]
+          - Time: [Insert Next Meeting Time]
+          - Location: [Insert Next Meeting Location]
+    
+          Thank you.
+    
+          Sincerely,
+          [Your Name]
+          [Your Position/Designation]
+          [Organization Name]
+    
+          [Contact Information: Phone number, email, address, etc.]
+        </pre>
+      </div></div><br><hr><br><br>
+     
     <button class="button-link" onclick="location.href='Procedure_and_policies.html'">Procedure And Policies</button>
+    <div class="templt">
+      <div class="container">
+          <div class="header">
+              <h1 class="heading">Memorandum</h1>
+              <div class="copy-text-container">
+                <div class="copy-text" onclick="copyText()">Copy Text</div>
+              </div>
+            </div>
+          <div class="header">
+            <h1 class="heading">PROCEDURES AND POLICIES</h1>
+          </div>
+          <pre id="procedure-policies-text">
+            Policy Name: [Policy Name]
+      
+            Effective Date: [Effective Date]
+      
+            Last Revised: [Last Revised Date]
+      
+            Policy Number: [Policy Number]
+      
+            Applicability: [Specify the scope and applicability]
+      
+            Purpose: [Specify the purpose of the policy]
+      
+            Policy Statement: [Provide the policy statement]
+      
+            Procedures: [Describe the specific procedures or steps to follow]
+      
+            Responsibilities: [Outline the responsibilities of the individuals or roles involved]
+      
+            Definitions: [Define any terms or concepts used in the policy]
+      
+            Related Documents: [List any related documents or resources]
+      
+            Review and Revision: [Outline the review and revision process]
+      
+            Approval: [Specify the approval process and authority]
+      
+            Enforcement: [Explain the enforcement measures or consequences for non-compliance]
+      
+            Contact Information: [Provide contact information for questions or further clarification]
+      
+            Thank you.
+      
+            Sincerely,
+            [Your Name]
+            [Your Position/Designation]
+            [Organization Name]
+      
+            [Contact Information: Phone number, email, address, etc.]
+          </pre>
+        </div>
+  </div><br><hr><br><br>
     <button class="button-link" onclick="location.href='Thesis_and_Dissertation.html'">Thesis and Dissertation</button>
+    <div class="templt">
+      <div class="container">
+          <div class="header">
+              <h1 class="heading">Memorandum</h1>
+              <div class="copy-text-container">
+                <div class="copy-text" onclick="copyText()">Copy Text</div>
+              </div>
+            </div>
+          <div class="header">
+            <h1 class="title">Thesis or Dissertation Title</h1>
+            <p class="writer">Author Name</p>
+          </div>
+          <div class="section">
+            <h2 class="section-title">Abstract</h2>
+            <p class="section-content">A concise summary of the research objectives, methodology, findings, and conclusions.</p>
+          </div>
+          <div class="section">
+            <h2 class="section-title">Table of Contents</h2>
+            <ul>
+              <li><a href="#chapter1">Chapter 1: Introduction</a></li>
+              <li><a href="#chapter2">Chapter 2: Literature Review</a></li>
+              <li><a href="#chapter3">Chapter 3: Methodology</a></li>
+              <li><a href="#chapter4">Chapter 4: Results and Analysis</a></li>
+              <li><a href="#chapter5">Chapter 5: Conclusion</a></li>
+              <li><a href="#references">References</a></li>
+            </ul>
+          </div>
+          <div class="section" id="chapter1">
+            <h2 class="chapter-title">Chapter 1: Introduction</h2>
+            <p class="chapter-content">This chapter provides an introduction to the research topic and outlines the objectives and scope of the study.</p>
+          </div>
+          <div class="section" id="chapter2">
+            <h2 class="chapter-title">Chapter 2: Literature Review</h2>
+            <p class="chapter-content">This chapter reviews relevant literature and previous studies related to the research topic.</p>
+          </div>
+          <div class="section" id="chapter3">
+            <h2 class="chapter-title">Chapter 3: Methodology</h2>
+            <p class="chapter-content">This chapter describes the research methodology, including the research design, data collection methods, and data analysis techniques.</p>
+          </div>
+          <div class="section" id="chapter4">
+            <h2 class="chapter-title">Chapter 4: Results and Analysis</h2>
+            <p class="chapter-content">This chapter presents the results of the research and provides an analysis of the findings.</p>
+          </div>
+          <div class="section" id="chapter5">
+            <h2 class="chapter-title">Chapter 5: Conclusion</h2>
+            <p class="chapter-content">This chapter summarizes the main findings of the study and presents the conclusions and implications.</p>
+          </div>
+          <div class="section" id="references">
+            <h2 class="section-title">References</h2>
+            <p class="section-content">List of sources or references cited in the thesis or dissertation.</p>
+          </div>
+        </div>
+  </div><br><hr><br><br>
     <button class="button-link" onclick="location.href='Notice.html'">Notice</button>
-   
+     <div class="templt">
+      <div class="container">
+      <div class="header">
+        <h1 class="heading">Notice</h1>
+        <div class="copy-text-container">
+          <div class="copy-text" onclick="copyText()">Copy Text</div>
+        </div>
+      </div>
+      <pre id="notice-text">
+        Dear [Recipient/Group],
+    
+        I am writing to inform you about [purpose/reason for the notice]. This notice serves to provide you with important information and instructions regarding [subject of the notice]. Please read it carefully and take the necessary action as instructed.
+    
+        In the body of the notice, provide detailed information, instructions, or announcements related to the subject matter. Organize the content into paragraphs or bullet points for better readability. Ensure that the language used is clear, concise, and easily understood by the recipients.
+    
+        To conclude, [summarize the key points of the notice]. If there are any specific actions required from the recipients, clearly state them and provide any relevant deadlines or contact information. We kindly request your prompt attention and cooperation in this matter.
+    
+        Thank you.
+        Sincerely,
+        [Your Name]
+        [Your Position/Designation]
+        [Organization Name]
+    
+        [Contact Information: Phone number, email, address, etc.]
+        [Date and Place of issuing the notice]
+      </pre>
+     </div>
+     </div><br><br><br><br><br>
     
     <a href="mailto:kundan992003@gmail.com" class="feedback-button">Give Feedback</a>
-    <p class="author" >Kkundan</p>
+    <p class="author">Kkundan</p>
 </body>
 </html>
