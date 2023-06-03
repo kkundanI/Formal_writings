@@ -75,11 +75,11 @@ p {
     height: 50px;
     width: 100%;
     background-color: #4d4d4d;
-    position: relative;
+    position: absolute;
   }
   
   .nav > .nav-header {
-    display: inline;
+    display: inline-block;
   }
   
   .nav > .nav-header > .nav-title {
