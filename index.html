@@ -15,7 +15,12 @@
         window.getSelection().addRange(range);
         document.execCommand('copy');
         window.getSelection().removeAllRanges();
-        alert('Text copied!');
+  
+        var copyButton = document.getElementById('copy-button');
+        copyButton.innerHTML = 'Copied!';
+        setTimeout(function() {
+          copyButton.innerHTML = 'Copy';
+        }, 2000);
       }
     </script>
 </head>
@@ -51,9 +56,9 @@
     <div class="templt">
       <div class="container">
           <div class="header">
-              <h1 class="heading">Report</h1>
+              <h1 class="heading"></h1>
               <div class="copy-text-container">
-                <div class="copy-text" onclick="copyText()"></div>
+                
               </div>
             </div>
           <div class="header">
@@ -105,7 +110,7 @@
         <div class="header">
           <h1 class="heading">Memorandum</h1>
           <div class="copy-text-container">
-            <div class="copy-text" onclick="copyText()"></div>
+            
           </div>
         </div>
         <pre id="report-text">
@@ -142,7 +147,7 @@
           <div class="header">
               <h1 class="heading">Resume</h1>
               <div class="copy-text-container">
-                <div class="copy-text" onclick="copyText()"></div>
+
               </div>
             </div>
           <div class="header">
@@ -187,7 +192,7 @@
         <div class="header">
             <h1 class="heading">Minutes</h1>
             <div class="copy-text-container">
-              <div class="copy-text" onclick="copyText()"></div>
+              
             </div>
           </div>
         <pre id="minutes-text">
@@ -247,9 +252,9 @@
     <div class="templt">
       <div class="container">
           <div class="header">
-              <h1 class="heading">Procedure And Policies</h1>
+              <h1 class="heading"></h1>
               <div class="copy-text-container">
-                <div class="copy-text" onclick="copyText()"></div>
+               
               </div>
             </div>
           <div class="header">
@@ -301,9 +306,9 @@
     <div class="templt">
       <div class="container">
           <div class="header">
-              <h1 class="heading">Thesis and Dissertation</h1>
+              <h1 class="heading"></h1>
               <div class="copy-text-container">
-                <div class="copy-text" onclick="copyText()"></div>
+               
               </div>
             </div>
           <div class="header">
@@ -357,7 +362,7 @@
       <div class="header">
         <h1 class="heading">Notice</h1>
         <div class="copy-text-container">
-          <div class="copy-text" onclick="copyText()"></div>
+         
         </div>
       </div>
       <pre id="notice-text">
