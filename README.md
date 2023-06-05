@@ -3,7 +3,8 @@
 
 <h3 align="center">A beginner frontend developer from India</h3>
 
-# Formal_writings
+# Formal_writings :
+<p>https://kkundani.github.io/Formal_writings/</p>
 
 # 💫 About Me:
 
