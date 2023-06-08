@@ -8,7 +8,7 @@
 
 # 💫 About Me:
 
-🔭 I’m currently working on little basic projects<br>🌱 I’m currently learning C++ programming<br>💬 Ask me about anything , i would like to help if i could. 
+🔭 I’m currently working on basic projects<br>🌱 I’m currently learning C++ programming<br>💬 Ask me about anything , i would like to help if i could. 
 
 ## 🌐 Socials:
 
