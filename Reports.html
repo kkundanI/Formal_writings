@@ -10,13 +10,15 @@
             color: #e0e0e0;
             font-family: Arial, sans-serif;
         }
-
+       
         h1 {
             color: #ffffff;
         }
-
-        p {
-            margin-bottom: 1.5em;
+        b {
+            padding-left: 5%;
+        }
+        a {
+            color: rgb(66, 127, 146);
         }
 
         li {
@@ -31,79 +33,1115 @@
         }
 
         .back-button {
-      margin-bottom: 10px;
-      background-color: #555;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
+            margin-bottom: 10px;
+            background-color: #555;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
     
-    .back-button:hover {
-      background-color: #333;
-    }
+        .back-button:hover {
+            background-color: #333;
+        }
+        h2 {
+            padding: 5%;
+        }
+        
+       .p, p {
+            padding-left: 8%;
+            margin-bottom: 1.5em;
+        }
+        
+        .report-block {
+              
+              background-color: #222;
+              padding: 10px;
+              margin-bottom: 20px;
+              margin-left: 5%;
+              border-radius: 5px;
+              overflow-x: auto;
+              overflow-y: auto;
+              white-space: pre;
+              tab-size: 2;
+              max-width: 80%;
+              max-height: 450px;
+              height: auto;
+  
+                }
+        .report-eblock {
+              
+              background-color: #222;
+              padding: 10px;
+              margin-bottom: 20px;
+              margin-left: 5%;
+              border-radius: 5px;
+              overflow-x: auto;
+              white-space: pre;
+              tab-size: 2;
+              max-width: 80%;
+              height: auto;
+  
+                }
+        .report-eeblock {
+              
+              background-color: #222;
+              padding: 10px;
+              margin-bottom: 20px;
+              margin-left: 5%;
+              border-radius: 5px;
+              overflow-x: auto;
+              overflow-y: auto;
+              white-space: pre;
+              tab-size: 2;
+              max-width: 80%;
+             max-height: 750px;
+  
+                }
+             
+              table {
+                width: 100%;
+                border-collapse: collapse;
+               
+              }
+          
+              th, td {
+                padding: 10px;
+                text-align: left;
+                border-bottom: 1px solid #fff;
+              }
+          
+              th {
+                background-color: #333;
+              }
+          
+              tr:nth-child(even) {
+                background-color: #444;
+              }
+            
     </style>
 </head>
 <body>
-    
     <button class="back-button" onclick="goBack()">Back</button>
-    <h1>Reports :</h1>
+    <h1>Reports:</h1>
     <p>Formal reports present detailed information, analysis, and findings on a specific topic or issue.
          They often follow a structured format and may include an executive summary, introduction, methodology,
-          results, conclusions, and recommendations.  </p>
+          results, conclusions, and recommendations.</p>
     <h1 style="color: #ffffff;">Types of Reports</h1>
     <ol class="report-types" type="A">
         <li>
             <span class="report-type">Financial Reports</span>
-            <ol class="sub-types" >
+            <ol class="sub-types">
                 <li>
-                   Balance Sheet
-                    <ol >
+                    <a href="#balance-sheet">Balance Sheet</a>
+                    <ol>
                         <!-- Add sub-items here if required -->
                     </ol>
                 </li>
-                <li>Income Statement</li>
-                <li>Cash Flow Statement</li>
-                <li>Financial Ratios</li>
+                <li><a href="#income-statement">Income Statement</a></li>
+                <li><a href="#cash-flow-statement">Cash Flow Statement</a></li>
+                <li><a href="#financial-ratios">Financial Ratios</a></li>
             </ol>
         </li>
         <li>
             <span class="report-type">Sales Reports</span>
             <ol class="sub-types">
-                <li>Sales Performance Report</li>
-                <li>Sales Forecasting Report</li>
-                <li>Sales Conversion Report</li>
-                <li>Customer Acquisition Report</li>
+                <li><a href="#sales-performance-report">Sales Performance Report</a></li>
+                <li><a href="#sales-forecasting-report">Sales Forecasting Report</a></li>
+                <li><a href="#sales-conversion-report">Sales Conversion Report</a></li>
+                <li><a href="#customer-acquisition-report">Customer Acquisition Report</a></li>
             </ol>
         </li>
         <li>
             <span class="report-type">Marketing Reports</span>
             <ol class="sub-types">
-                <li>Market Research Report</li>
-                <li>Advertising Campaign Report</li>
-                <li>Social Media Analytics Report</li>
-                <li>Website Traffic Report</li>
+                <li><a href="#market-research-report">Market Research Report</a></li>
+                <li><a href="#advertising-campaign-report">Advertising Campaign Report</a></li>
+                <li><a href="#social-media-analytics-report">Social Media Analytics Report</a></li>
+                <li><a href="#website-traffic-report">Website Traffic Report</a></li>
             </ol>
         </li>
         <li>
             <span class="report-type">Other Reports</span>
             <ol class="sub-types">
-                <li>Research Report</li>
-                <li>Progress Report</li>
-                <li>Audit Report</li>
-                <li>Feasibility Report</li>
-                <li>Annual Report</li>
-                <li>Incident Report</li>
-                <li>Sales Report</li>
-                <li>Project Report</li>
+                <li><a href="#research-report">Research Report</a></li>
+                <li><a href="#progress-report">Progress Report</a></li>
+                <li><a href="#audit-report">Audit Report</a></li>
+                <li><a href="#feasibility-report">Feasibility Report</a></li>
+                <li><a href="#annual-report">Annual Report</a></li>
+                <li><a href="#incident-report">Incident Report</a></li>
+                <li><a href="#sales-report">Sales Report</a></li>
+                <li><a href="#project-report">Project Report</a></li>
             </ol>
         </li>
     </ol>
+    <h2 id="balance-sheet">Balance Sheet</h2>
+    <p>Also known as the statement of financial position, the balance sheet presents a snapshot of a company's financial position at a specific point in time. It shows the company's assets, liabilities, and shareholders' equity, providing insights into its liquidity, solvency, and net worth.
+    </p>
+    <div class="report-block">      
+       <table>
+          <tr>
+            <th>Assets</th>
+            <th>Amount ($)</th>
+          </tr>
+          <tr>
+            <td>Current Assets</td>
+            <td>$X</td>
+          </tr>
+          <!-- Add more rows for each asset category -->
+          <tr>
+            <td>Total Assets</td>
+            <td>$X</td>
+          </tr>
+          <tr>
+            <th>Liabilities</th>
+            <th>Amount ($)</th>
+          </tr>
+          <tr>
+            <td>Current Liabilities</td>
+            <td>$X</td>
+          </tr>
+          <!-- Add more rows for each liability category -->
+          <tr>
+            <td>Total Liabilities</td>
+            <td>$X</td>
+          </tr>
+          <tr>
+            <th>Shareholders' Equity</th>
+            <th>Amount ($)</th>
+          </tr>
+          <tr>
+            <td>Common Stock</td>
+            <td>$X</td>
+          </tr>
+          <!-- Add more rows for each equity category -->
+          <tr>
+            <td>Total Shareholders' Equity</td>
+            <td>$X</td>
+          </tr>
+          <tr>
+            <th>Total Liabilities and Shareholders' Equity</th>
+            <th>Amount ($)</th>
+          </tr>
+          <tr>
+            <td colspan="2">$X</td>
+          </tr>
+        </table> 
+      </div>
+
+    <h2 id="income-statement">Income Statement</h2>
+    <p>The Income Statement Report, also known as the Profit and Loss Statement, provides a summary of a company's revenue, expenses, and net income over a specific period. It is a financial statement that helps assess the profitability and financial performance of a business.</p>
+    <div>
+            <b >An Income Statement typically includes the following components :</b>
+            <ul class="p">
+                <li>Sales or Revenue</li>
+                <li>Cost of Goods Sold (COGS)</li>
+                <li>Gross Profit</li>
+                <li>Operating Expenses</li>
+                <li>Operating Income</li>
+                <li>Non-Operating Income or Expenses</li>
+                <li>Net Income</li>
+            </ul>
+        </div>
+        <div class="report-block">
+            <table>
+                <tr>
+                    <th colspan="2" style="text-align: center;">income statement</th>
+                </tr>
+                <tr>
+                    <th>Revenue</th>
+                    <th>Amount ($)</th>
+                </tr>
+                <tr>
+                    <td>Sales Revenue</td>
+                    <td>$50,000</td>
+                </tr>
+                <!-- Add more rows for each revenue category if applicable -->
+                <tr>
+                    <th>Cost of Goods Sold</th>
+                    <th>Amount ($)</th>
+                </tr>
+                <tr>
+                    <td>Cost of Goods Sold</td>
+                    <td>-$20,000</td>
+                </tr>
+                <!-- Add more rows for each expense category if applicable -->
+                <tr>
+                    <th>Gross Profit</th>
+                    <th>Amount ($)</th>
+                </tr>
+                <tr>
+                    <td>Gross Profit</td>
+                    <td>$30,000</td>
+                </tr>
+                <tr>
+                    <th>Operating Expenses</th>
+                    <th>Amount ($)</th>
+                </tr>
+                <tr>
+                    <td>Operating Expenses</td>
+                    <td>-$15,000</td>
+                </tr>
+                <!-- Add more rows for each expense category if applicable -->
+                <tr>
+                    <th>Operating Income</th>
+                    <th>Amount ($)</th>
+                </tr>
+                <tr>
+                    <td>Operating Income</td>
+                    <td>$15,000</td>
+                </tr>
+                <tr>
+                    <th>Non-Operating Income or Expenses</th>
+                    <th>Amount ($)</th>
+                </tr>
+                <tr>
+                    <td>Non-Operating Income</td>
+                    <td>$5,000</td>
+                </tr>
+                <!-- Add more rows for each income or expense category if applicable -->
+                <tr>
+                    <th>Net Income</th>
+                    <th>Amount ($)</th>
+                </tr>
+                <tr>
+                    <td>Net Income</td>
+                    <td>$20,000</td>
+                </tr>
+            </table>
+            
+        </div>
+       
+    </div>
+    
+    
+     
+    <h2 id="cash-flow-statement">Cash Flow Statement</h2>
+    <p>A Cash Flow Statement is a financial statement that provides information about the cash inflows and outflows of a company during a specific period. It helps assess the ability of a company to generate cash and the sources and uses of cash within its operations.</p>
+    <b>A Cash Flow Statement typically includes the following components :</b>
+   
+    <ul class="p">
+        <li>Cash Flow from Operating Activities</li>
+        <li>Cash Flow from Investing Activities</li>
+        <li>Cash Flow from Financing Activities</li>
+        <li>Net Cash Flow</li>
+    </ul>
+    <div class="report-block">
+        <table>
+            <tr>
+                <th colspan="2" style="text-align: center;">Cash Flow Statement</th>
+            </tr>
+            <tr>
+                <th>Cash Flow from Operating Activities</th>
+                <th>Amount ($)</th>
+            </tr>
+            <tr>
+                <td>Cash Inflows</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Sales Revenue</td>
+                <td>$50,000</td>
+            </tr>
+            <!-- Add more rows for each cash inflow category -->
+            <tr>
+                <td>Cash Outflows</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Salaries</td>
+                <td>-$20,000</td>
+            </tr>
+            <tr>
+                <td>Rent and Utilities</td>
+                <td>-$10,000</td>
+            </tr>
+            <!-- Add more rows for each cash outflow category -->
+            <tr>
+                <td>Net Cash Flow from Operations</td>
+                <td>$20,000</td>
+            </tr>
+            <tr>
+                <th>Cash Flow from Investing Activities</th>
+                <th>Amount ($)</th>
+            </tr>
+            <tr>
+                <td>Cash Inflows</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Sale of Assets</td>
+                <td>$10,000</td>
+            </tr>
+            <!-- Add more rows for each cash inflow category -->
+            <tr>
+                <td>Cash Outflows</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Purchase of Equipment</td>
+                <td>-$5,000</td>
+            </tr>
+            <!-- Add more rows for each cash outflow category -->
+            <tr>
+                <td>Net Cash Flow from Investing</td>
+                <td>$5,000</td>
+            </tr>
+            <tr>
+                <th>Cash Flow from Financing Activities</th>
+                <th>Amount ($)</th>
+            </tr>
+            <tr>
+                <td>Cash Inflows</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Issuance of Stock</td>
+                <td>$30,000</td>
+            </tr>
+            <!-- Add more rows for each cash inflow category -->
+            <tr>
+                <td>Cash Outflows</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Loan Repayment</td>
+                <td>-$10,000</td>
+            </tr>
+            <!-- Add more rows for each cash outflow category -->
+            <tr>
+                <td>Net Cash Flow from Financing</td>
+                <td>$20,000</td>
+            </tr>
+            <tr>
+                <th>Net Cash Flow</th>
+                <th>Amount ($)</th>
+            </tr>
+            <tr>
+                <td>Cash Inflows</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Total Inflows</td>
+                <td>$90,000</td>
+            </tr>
+            <!-- Add more rows for each cash inflow category -->
+            <tr>
+                <td>Cash Outflows</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Total Outflows</td>
+                <td>-$5,000</td>
+            </tr>
+            <!-- Add more rows for each cash outflow category -->
+            <tr>
+                <td>Net Cash Flow</td>
+                <td>$85,000</td>
+            </tr>
+        </table>
+        
+    </div>
+
+    <h2 id="financial-ratios">Financial Ratios</h2>
+    <p>A Financial Ratios Report provides an analysis of key financial ratios that help evaluate the financial performance and health of a company. Financial ratios are calculated by comparing different financial figures from the company's financial statements, such as the balance sheet and income statement.</p>
+    <div>
+        <div style="background-color: #1f1f1f; color: #e0e0e0; font-family: Arial, sans-serif;">
+            <div style="margin-bottom: 2em;">
+               <b style="padding-left: 5%;">A Financial Ratios Report may include various types of ratios, such as :</b>
+                <ul class="p">
+                    <li>Liquidity Ratios</li>
+                    <li>Profitability Ratios</li>
+                    <li>Efficiency Ratios</li>
+                    <li>Financial Leverage Ratios</li>
+                    <li>Market Ratios</li>
+                </ul>
+            </div>
+            <div class="report-block">
+              
+                <table>
+                    <tr>
+                        <th>Financial Ratio</th>
+                        <th>Value</th>
+                    </tr>
+                    <tr>
+                        <td>Liquidity Ratio: Current Ratio</td>
+                        <td>2.5</td>
+                    </tr>
+                    <tr>
+                        <td>Liquidity Ratio: Quick Ratio</td>
+                        <td>1.8</td>
+                    </tr>
+                    <tr>
+                        <td>Profitability Ratio: Gross Profit Margin</td>
+                        <td>40%</td>
+                    </tr>
+                    <tr>
+                        <td>Profitability Ratio: Net Profit Margin</td>
+                        <td>15%</td>
+                    </tr>
+                    <tr>
+                        <td>Efficiency Ratio: Inventory Turnover</td>
+                        <td>6 times</td>
+                    </tr>
+                    <tr>
+                        <td>Efficiency Ratio: Accounts Receivable Turnover</td>
+                        <td>8 times</td>
+                    </tr>
+                    <tr>
+                        <td>Financial Leverage Ratio: Debt-to-Equity Ratio</td>
+                        <td>0.5</td>
+                    </tr>
+                    <tr>
+                        <td>Market Ratio: Price-to-Earnings Ratio</td>
+                        <td>20</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+
+    <h2 id="sales-performance-report">Sales Performance Report</h2>
+    <p>A Sales Performance Report provides an analysis of the sales activities and results of a company over a specific period. It helps assess the performance of the sales team, identify trends, and make informed decisions to optimize sales strategies and achieve targets.</p>
+    <div>
+        <div style="background-color: #1f1f1f; color: #e0e0e0; font-family: Arial, sans-serif;">
+              <div style="margin-bottom: 2em;">
+                <b>A Sales Performance Report may include the following key metrics and analysis:</b>
+                <ul class="p">
+                    <li>Total Sales Revenue</li>
+                    <li>Number of Units Sold</li>
+                    <li>Conversion Rates</li>
+                    <li>Sales Growth</li>
+                    <li>Customer Acquisition Cost</li>
+                    <li>Sales by Product/Service Category</li>
+                    <li>Sales by Region/Territory</li>
+                </ul>
+            </div>
+            <div class="report-block"> 
+            <table>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Value</th>
+                    </tr>
+                    <tr>
+                        <td>Total Sales Revenue</td>
+                        <td>$500,000</td>
+                    </tr>
+                    <tr>
+                        <td>Number of Units Sold</td>
+                        <td>2,500</td>
+                    </tr>
+                    <tr>
+                        <td>Conversion Rate</td>
+                        <td>15%</td>
+                    </tr>
+                    <tr>
+                        <td>Sales Growth</td>
+                        <td>10%</td>
+                    </tr>
+                    <tr>
+                        <td>Customer Acquisition Cost</td>
+                        <td>$200</td>
+                    </tr>
+                    <tr>
+                        <td>Sales by Product/Service Category</td>
+                        <td>
+                            <ul>
+                                <li>Product A: $200,000</li>
+                                <li>Product B: $150,000</li>
+                                <li>Product C: $100,000</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sales by Region/Territory</td>
+                        <td>
+                            <ul>
+                                <li>Region X: $250,000</li>
+                                <li>Region Y: $200,000</li>
+                                <li>Region Z: $50,000</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+
+    <h2 id="sales-forecasting-report">Sales Forecasting Report</h2>
+    <p>A Sales Forecasting Report provides an estimation of future sales based on historical data, market trends, and other relevant factors. It helps businesses plan their sales strategies, allocate resources, and make informed decisions to achieve their sales targets.</p>
+    <div>
+        <div style="background-color: #1f1f1f; color: #e0e0e0; font-family: Arial, sans-serif;">
+             <div style="margin-bottom: 2em;">
+                <b>A Sales Forecasting Report may include the following key elements:</b>
+                <ul class="p">
+                    <li>Historical Sales Data</li>
+                    <li>Market Analysis</li>
+                    <li>Seasonal Trends</li>
+                    <li>Product/Service Demand</li>
+                    <li>Competitor Analysis</li>
+                    <li>Economic Factors</li>
+                    <li>Sales Goals and Objectives</li>
+                </ul>
+            </div>
+            <div class="report-block">
+               <p>The Sales Forecasting Report provides an estimation of the projected sales for the next quarter:</p>
+                <table>
+                    <tr>
+                        <th>Product/Service</th>
+                        <th>Projected Sales</th>
+                    </tr>
+                    <tr>
+                        <td>Product A</td>
+                        <td>$50,000</td>
+                    </tr>
+                    <tr>
+                        <td>Product B</td>
+                        <td>$30,000</td>
+                    </tr>
+                    <tr>
+                        <td>Product C</td>
+                        <td>$20,000</td>
+                    </tr>
+                    <tr>
+                        <td>Product D</td>
+                        <td>$15,000</td>
+                    </tr>
+                    <tr>
+                        <td>Product E</td>
+                        <td>$10,000</td>
+                    </tr>
+                </table>
+                <p>The sales projections are based on the analysis of historical sales data, market trends, and the anticipated demand for each product.
+ It is important to note that sales forecasts are subject to uncertainties and may vary based on market conditions and other factors.</p>
+            </div>
+        </div>
+    </div>
+    
+    <h2 id="sales-conversion-report">Sales Conversion Report</h2>
+     <p>A Sales Conversion Report tracks and analyzes the conversion rates at different stages of the sales process. It provides insights into the effectiveness of the sales funnel and identifies areas for improvement to maximize conversions and revenue.</p>
+    <div>
+    <div style="background-color: #1f1f1f; color: #e0e0e0; font-family: Arial, sans-serif;">
+        <div style="margin-bottom: 2em;">
+            <b>A Sales Conversion Report may include the following key elements:</b>
+            <ul class="p">
+                <li>Lead Generation Metrics</li>
+                <li>Conversion Rate by Stage</li>
+                <li>Sales Funnel Analysis</li>
+                <li>Lost Opportunities</li>
+                <li>Conversion Improvement Strategies</li>
+            </ul>
+        </div>
+        <div class="report-block">
+             <p>The Sales Conversion Report provides insights into the conversion rates at different stages of the sales process:</p>
+            <table>
+                <tr>
+                    <th>Sales Stage</th>
+                    <th>Leads</th>
+                    <th>Converted</th>
+                    <th>Conversion Rate</th>
+                </tr>
+                <tr>
+                    <td>Prospecting</td>
+                    <td>100</td>
+                    <td>30</td>
+                    <td>30%</td>
+                </tr>
+                <tr>
+                    <td>Qualification</td>
+                    <td>30</td>
+                    <td>20</td>
+                    <td>67%</td>
+                </tr>
+                <tr>
+                    <td>Proposal</td>
+                    <td>20</td>
+                    <td>15</td>
+                    <td>75%</td>
+                </tr>
+                <tr>
+                    <td>Closure</td>
+                    <td>15</td>
+                    <td>10</td>
+                    <td>67%</td>
+                </tr>
+            </table>
+            <p>The report indicates the number of leads at each stage of the sales process, the number of leads converted, and the corresponding conversion rates.
+ It helps identify areas where the conversion rates can be improved and provides insights to optimize the sales process.</p>
+        </div>
+    </div>
+</div>
+
+    <h2 id="customer-acquisition-report">Customer Acquisition Report</h2>
+     <p>A Customer Acquisition Report provides insights into the effectiveness of marketing and sales efforts in acquiring new customers. It tracks key metrics and performance indicators to evaluate customer acquisition strategies and optimize the acquisition process.</p>
+    <div>
+    <div style="background-color: #1f1f1f; color: #e0e0e0; font-family: Arial, sans-serif;">
+        <div style="margin-bottom: 2em;">
+           <b>A Customer Acquisition Report may include the following key elements:</b>
+            <ul class="p">
+                <li>Marketing Channels Analysis</li>
+                <li>Lead Generation Sources</li>
+                <li>Conversion Rates</li>
+                <li>Customer Acquisition Cost</li>
+                <li>Return on Investment (ROI)</li>
+                <li>Customer Lifetime Value (CLTV)</li>
+                <li>Acquisition Strategy Recommendations</li>
+            </ul>
+        </div>
+        <div class="report-block">
+           <p>The Customer Acquisition Report provides insights into the performance of various customer acquisition channels:</p>
+            <table>
+                <tr>
+                    <th>Marketing Channel</th>
+                    <th>Leads Generated</th>
+                    <th>Customers Acquired</th>
+                    <th>Conversion Rate</th>
+                    <th>Customer Acquisition Cost</th>
+                </tr>
+                <tr>
+                    <td>Organic Search</td>
+                    <td>500</td>
+                    <td>100</td>
+                    <td>20%</td>
+                    <td>$50</td>
+                </tr>
+                <tr>
+                    <td>Paid Advertising</td>
+                    <td>1000</td>
+                    <td>150</td>
+                    <td>15%</td>
+                    <td>$80</td>
+                </tr>
+                <tr>
+                    <td>Referrals</td>
+                    <td>300</td>
+                    <td>50</td>
+                    <td>16.7%</td>
+                    <td>$70</td>
+                </tr>
+            </table>
+            <p>The report highlights the performance of different marketing channels in terms of leads generated, customers acquired, conversion rates,
+ and customer acquisition costs. It helps identify the most effective channels and provides insights to optimize customer acquisition strategies.</p>
+        </div>
+    </div>
+</div>
+
+    <h2 id="market-research-report">Market Research Report</h2>
+    <p>A Market Research Report provides a comprehensive analysis of a specific market or industry.
+It involves collecting and analyzing data to gain insights into market trends, customer behavior, competitors, and other relevant factors. The report helps businesses make informed decisions and develop effective strategies.</p>
+    <div>
+    <div style="background-color: #1f1f1f; color: #e0e0e0; font-family: Arial, sans-serif;">
+       <div style="margin-bottom: 2em;">
+            <b>A Market Research Report may include the following key elements:</b>
+            <ul class="p">
+                <li>Market Overview and Definition</li>
+                <li>Research Methodology</li>
+                <li>Data Collection and Analysis</li>
+                <li>Market Size and Growth Rate</li>
+                <li>Customer Segmentation</li>
+                <li>Competitor Analysis</li>
+                <li>SWOT Analysis</li>
+                <li>Key Findings and Recommendations</li>
+            </ul>
+        </div>
+        <div class="report-block">
+        <p>The Market Research Report provides insights into the size, growth rate, and customer segmentation of a specific market:</p>
+            <table>
+                <tr>
+                    <th>Market Segment</th>
+                    <th>Market Size ($)</th>
+                    <th>Growth Rate (%)</th>
+                </tr>
+                <tr>
+                    <td>Segment A</td>
+                    <td>$1,000,000</td>
+                    <td>10%</td>
+                </tr>
+                <tr>
+                    <td>Segment B</td>
+                    <td>$500,000</td>
+                    <td>5%</td>
+                </tr>
+                <tr>
+                    <td>Segment C</td>
+                    <td>$750,000</td>
+                    <td>8%</td>
+                </tr>
+            </table>
+            <p>The report also includes a SWOT analysis highlighting the strengths, weaknesses, opportunities, and threats in the market.
+ Based on the findings, it provides recommendations on market entry strategies and potential areas for growth.</p>
+        </div>
+    </div>
+</div>
+
+    <h2 id="advertising-campaign-report">Advertising Campaign Report</h2>
+     <p>An Advertising Campaign Report provides an analysis of the performance and effectiveness of an advertising campaign. It evaluates key metrics and outcomes to assess the impact on brand awareness, customer engagement, and overall campaign objectives. The report helps in optimizing future advertising efforts and making data-driven decisions.</p>
+    <div>
+    <div style="background-color: #1f1f1f; color: #e0e0e0; font-family: Arial, sans-serif;">
+        <div style="margin-bottom: 2em;">
+            <b>An Advertising Campaign Report may include the following key elements:</b>
+            <ul class="p">
+                <li>Campaign Objectives and Target Audience</li>
+                <li>Ad Channels and Platforms Used</li>
+                <li>Ad Impressions and Reach</li>
+                <li>Click-Through Rate (CTR)</li>
+                <li>Conversion Rate</li>
+                <li>Return on Ad Spend (ROAS)</li>
+                <li>Cost per Acquisition (CPA)</li>
+                <li>Campaign Insights and Recommendations</li>
+            </ul>
+        </div>
+        <div class="report-block">
+            <p>The Advertising Campaign Report provides insights into the performance of an advertising campaign across various channels:</p>
+            <table>
+                <tr>
+                    <th>Ad Channel</th>
+                    <th>Impressions</th>
+                    <th>CTR</th>
+                    <th>Conversion Rate</th>
+                    <th>ROAS</th>
+                </tr>
+                <tr>
+                    <td>Google Ads</td>
+                    <td>100,000</td>
+                    <td>2%</td>
+                    <td>5%</td>
+                    <td>400%</td>
+                </tr>
+                <tr>
+                    <td>Facebook Ads</td>
+                    <td>150,000</td>
+                    <td>1.5%</td>
+                    <td>4%</td>
+                    <td>300%</td>
+                </tr>
+                <tr>
+                    <td>Instagram Ads</td>
+                    <td>75,000</td>
+                    <td>1.8%</td>
+                    <td>3%</td>
+                    <td>250%</td>
+                </tr>
+            </table>
+            <p>The report includes performance metrics such as ad impressions, click-through rate (CTR), conversion rate, and return on ad spend (ROAS) 
+for each advertising channel. It provides insights into the effectiveness of the campaign and offers recommendations for optimizing future ad campaigns.</p>
+        </div>
+    </div>
+</div>
+
+    <h2 id="social-media-analytics-report">Social Media Analytics Report</h2>
+    <p>A Social Media Analytics Report provides insights and analysis of the performance and engagement on various social media platforms. It examines key metrics, user behavior, audience demographics, and content performance. The report helps in evaluating the effectiveness of social media strategies, identifying areas for improvement, and optimizing social media campaigns.</p>
+    <div>
+    <div style="background-color: #1f1f1f; color: #e0e0e0; font-family: Arial, sans-serif;">
+        <div style="margin-bottom: 2em;">
+            <b>A Social Media Analytics Report may include the following key elements:</b>
+            <ul class="p">
+                <li>Platforms Analyzed (e.g., Facebook, Instagram, Twitter)</li>
+                <li>Follower Growth and Engagement Metrics</li>
+                <li>Reach and Impressions</li>
+                <li>Post Engagement (Likes, Comments, Shares)</li>
+                <li>Demographic Insights</li>
+                <li>Top-performing Content</li>
+                <li>Competitor Analysis</li>
+                <li>Recommendations for Optimization</li>
+            </ul>
+        </div>
+        <div class="report-block">
+            <h2>Example Social Media Analytics Report</h2>
+            <p>The Social Media Analytics Report provides insights into the performance of social media channels:</p>
+            <table>
+                <tr>
+                    <th>Social Media Platform</th>
+                    <th>Followers</th>
+                    <th>Engagement Rate</th>
+                    <th>Top Performing Post</th>
+                </tr>
+                <tr>
+                    <td>Facebook</td>
+                    <td>10,000</td>
+                    <td>3%</td>
+                    <td>Post with image and video</td>
+                </tr>
+                <tr>
+                    <td>Instagram</td>
+                    <td>20,000</td>
+                    <td>5%</td>
+                    <td>Post with influencer collaboration</td>
+                </tr>
+                <tr>
+                    <td>Twitter</td>
+                    <td>5,000</td>
+                    <td>2%</td>
+                    <td>Post with trending hashtag</td>
+                </tr>
+            </table>
+            <p>The report includes key metrics such as follower growth, engagement rate, and top-performing posts for each social media platform.
+ It also provides insights into the demographics of the audience and recommendations for optimizing social media strategies.</p>
+        </div>
+    </div>
+</div>
+
+    <h2 id="website-traffic-report">Website Traffic Report</h2>
+    <p>A Website Traffic Report provides an analysis of the traffic and user behavior on a website. It examines key metrics, such as visits, page views, bounce rate, and conversion rate. The report helps in understanding the effectiveness of marketing campaigns, user engagement, and areas for website optimization.</p>
+    <div>
+    <div style="background-color: #1f1f1f; color: #e0e0e0; font-family: Arial, sans-serif;">
+         <div style="margin-bottom: 2em;">
+            <b>A Website Traffic Report may include the following key elements:</b>
+            <ul class="p">
+                <li>Total Visits and Unique Visitors</li>
+                <li>Page Views and Average Time on Page</li>
+                <li>Bounce Rate and Exit Rate</li>
+                <li>Traffic Sources (Organic, Referral, Direct, Social)</li>
+                <li>Top Landing Pages</li>
+                <li>Conversion Rate and Goal Completions</li>
+                <li>Demographic Insights</li>
+                <li>Recommendations for Website Optimization</li>
+            </ul>
+        </div>
+        <div class="report-block">
+            <p>The Website Traffic Report provides insights into the traffic and user behavior on the website:</p>
+            <table>
+                <tr>
+                    <th>Metric</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td>Total Visits</td>
+                    <td>10,000</td>
+                </tr>
+                <tr>
+                    <td>Unique Visitors</td>
+                    <td>8,000</td>
+                </tr>
+                <tr>
+                    <td>Page Views</td>
+                    <td>25,000</td>
+                </tr>
+                <tr>
+                    <td>Average Time on Page</td>
+                    <td>2 minutes</td>
+                </tr>
+                <tr>
+                    <td>Bounce Rate</td>
+                    <td>40%</td>
+                </tr>
+                <tr>
+                    <td>Traffic Sources</td>
+                    <td>Organic: 40% , Referral: 25% , Direct: 20% , Social: 15%</td>
+                </tr>
+                <tr>
+                    <td>Top Landing Pages</td>
+                    <td>Homepage , Product , Page Blog</td>
+                </tr>
+                <tr>
+                    <td>Conversion Rate</td>
+                    <td>3%</td>
+                </tr>
+                <tr>
+                    <td>Goal Completions</td>
+                    <td>300</td>
+                </tr>
+            </table>
+            <p>The report includes key metrics such as total visits, unique visitors, page views, bounce rate, and conversion rate.
+It also provides insights into traffic sources, top landing pages, and recommendations for optimizing website performance and user experience.</p>
+        </div>
+    </div>
+</div>
+
+    <h2 id="research-report">Research Report</h2>
+    <p>A Research Report is a comprehensive document that presents the findings, analysis, and conclusions of a research study or investigation.
+It provides detailed information about the research objectives, methodology, data collection, analysis techniques, and outcomes. 
+The report aims to communicate the research process and results to the intended audience.</p>
+    
+    <div class="report-eblock">
+        
+            Research Report
+            
+            Title: The Impact of Social Media on Consumer Behavior
+            
+            Executive Summary:
+            The research study aimed to investigate the influence of social media on consumer behavior in the context of online shopping.
+The study employed a mixed-methods approach, combining surveys and interviews to gather data from a sample of 500 participants.
+The findings revealed that social media significantly influences consumer purchasing decisions, with a strong correlation between social media engagement and purchase intention.
+Based on the results, recommendations for marketers and businesses were provided to leverage social media platforms for effective consumer engagement and targeted marketing strategies.
+            
+            Introduction:
+            The rapid growth of social media platforms has transformed the way people interact, share information, and make purchasing decisions.
+This research study seeks to explore the impact of social media on consumer behavior in the online shopping environment.
+By understanding the relationship between social media usage and consumer decision-making, businesses can develop effective marketing strategies to engage and convert customers.
+            
+            Methodology:
+            A mixed-methods approach was adopted to collect and analyze data. Firstly, an online survey was conducted among a randomly selected sample of 500 participants 
+who had engaged in online shopping in the past six months. The survey included questions related to social media usage, purchasing behavior, and influences on decision-making.
+Additionally, in-depth interviews were conducted with a subset of 20 participants to gain deeper insights into their experiences and perceptions.
+            
+            Results:
+            The survey results indicated that 85% of respondents reported using social media platforms for product research and recommendations.
+Furthermore, 72% of participants stated that social media content directly influenced their purchase decisions. 
+The most influential factors were peer recommendations (53%), product reviews and ratings (47%), and targeted advertisements (38%).
+The interviews provided qualitative insights into the emotional and psychological aspects of social media influence on consumer behavior.
+            
+            Discussion:
+            The findings highlight the significant impact of social media on consumer behavior. The accessibility of social media platforms, coupled with the ability to share opinions and recommendations, has created 
+a powerful environment for influencing consumer decision-making. Marketers should focus on creating engaging and shareable content to maximize brand exposure and customer reach. 
+Moreover, targeted advertising campaigns based on user preferences and behavior can enhance conversion rates.
+            
+            Conclusion:
+            In conclusion, this research study confirms the strong influence of social media on consumer behavior in the online shopping context. Businesses need to recognize the importance of social media platforms 
+as powerful tools for engaging with consumers, building brand awareness, and influencing purchase decisions. 
+By understanding the key factors that drive consumer behavior on social media, marketers can develop effective strategies to capitalize on this influential channel.
+            
+            References:
+            - Smith, J. (2019). The impact of social media on consumer behavior. Journal of Marketing Research, 25(2), 45-62.
+            - Johnson, L. M. (2020). Social media and online consumer behavior: A comprehensive review. Journal of Consumer Psychology, 38(3), 321-338.
+           
+            
+    </div>
+    <h2 id="progress-report">Progress Report</h2>
+    <p>Description of the Progress Report goes here.</p>
+    <div class="report-eeblock" >
+        
+        <h2>Project: Product Development - New Mobile Application</h2>
+        <p>Duration: January 1, 2023 - June 30, 2023</p>
+    
+        <h3>Introduction:</h3>
+        <p>This progress report provides an update on the status and progress of the Product Development project for our new mobile application. 
+The project aims to design, develop, and launch a user-friendly mobile application that offers our customers enhanced functionality and a seamless user experience. 
+This report covers the activities, milestones achieved, challenges faced, and the plan for the upcoming phase of the project.</p>
+    
+        <h3>Project Objectives:</h3>
+        <ul>
+            <li>Identify user requirements and develop a comprehensive product roadmap.</li>
+            <li>Design an intuitive and visually appealing user interface for the mobile application.</li>
+            <li>Develop the necessary features and functionalities to meet user needs and business goals.</li>
+            <li>Conduct rigorous testing and quality assurance to ensure a stable and reliable application.</li>
+            <li>Implement effective security measures to safeguard user data and protect against vulnerabilities.</li>
+            <li>Create a robust back-end infrastructure to support the application's performance and scalability.</li>
+            <li>Launch the mobile application on both iOS and Android platforms and monitor its performance.</li>
+        </ul>
+    
+        <h3>Accomplishments:</h3>
+        <ul>
+            <li>Conducted extensive user research and analysis to understand target audience needs and preferences.</li>
+            <li>Defined the product requirements and finalized the product roadmap.</li>
+            <li>Created wireframes and interactive prototypes to visualize the application's user interface.</li>
+            <li>Completed the front-end development of the mobile application, incorporating the approved design.</li>
+            <li>Implemented key features, such as user registration, authentication, and core functionality modules.</li>
+            <li>Conducted thorough testing to identify and fix bugs and ensure the application's stability.</li>
+            <li>Implemented a secure data storage and encryption mechanism to protect user information.</li>
+            <li>Developed a scalable and reliable back-end infrastructure to support the application's operations.</li>
+            <li>Prepared the application for the submission to app stores, adhering to their guidelines and requirements.</li>
+        </ul>
+    
+        <h3>Challenges:</h3>
+        <ul>
+            <li>Adapting to changing user requirements and incorporating feedback into the development process.</li>
+            <li>Addressing technical challenges related to integrating third-party APIs and ensuring compatibility.</li>
+            <li>Managing project timelines and dependencies to meet the scheduled milestones.</li>
+            <li>Balancing resource allocation between development, testing, and quality assurance activities.</li>
+            <li>Ensuring effective communication and coordination among the project team members.</li>
+        </ul>
+    
+        <h3>Next Steps:</h3>
+        <ul>
+            <li>Conduct beta testing with a select group of users to gather feedback and identify areas for improvement.</li>
+            <li>Refine and optimize the user interface based on user feedback and usability testing results.</li>
+            <li>Conduct comprehensive performance testing to ensure the application can handle increased user load.</li>
+            <li>Finalize the documentation, including user manuals and technical specifications.</li>
+            <li>Prepare the application for submission to the app stores and complete the necessary app store guidelines.</li>
+            <li>Develop a marketing and promotional strategy for the application's launch and user acquisition.</li>
+            <li>Monitor and analyze user feedback and application usage data to drive future enhancements and updates.</li>
+        </ul>
+    
+        <h3>Conclusion:</h3>
+        <p>The Product Development project for the new mobile application has made significant progress during the first half of the project duration. 
+The project team has successfully completed key milestones, including user research, design, development, and testing. Challenges were addressed through effective problem-solving and collaboration. 
+The upcoming phase of the project will focus on refining the application based on user feedback, conducting thorough testing, and preparing for the application's launch. 
+The team remains dedicated to delivering a high-quality mobile application that meets user expectations and contributes to our business objectives.</p>
+    
+    </div>
+    <h2 id="audit-report">Audit Report</h2>
+    <p>Description of the Audit Report goes here.</p>
+    <div class="report-block">
+        <h2>Audit of Financial Statements - Year Ended December 31, 2022</h2>
+
+        <h3>Introduction:</h3>
+        <p>This audit report provides the findings and conclusions of the audit of the financial statements of ABC Company for the year ended December 31, 2022. 
+The objective of the audit was to express an opinion on the fairness and reliability of the financial statements in accordance with generally accepted accounting principles.</p>
+    
+        <h3>Audit Scope:</h3>
+        <p>The audit was conducted in accordance with the International Standards on Auditing (ISA) and included examining evidence supporting the amounts and disclosures in the financial statements. 
+The audit procedures were designed to obtain reasonable assurance about whether the financial statements are free from material misstatement, whether due to fraud or error.</p>
+    
+        <h3>Audit Findings:</h3>
+        <table>
+            <tr>
+                <th>Area</th>
+                <th>Finding</th>
+                <th>Recommendation</th>
+            </tr>
+            <tr>
+                <td>Revenue Recognition</td>
+                <td>Insufficient documentation and controls in place for recognizing revenue from long-term contracts.</td>
+                <td>Implement a robust revenue recognition policy and strengthen documentation 
+and controls to ensure compliance with accounting standards.</td>
+            </tr>
+            <tr>
+                <td>Expense Classification</td>
+                <td>Inconsistent expense classification across departments,
+ leading to misrepresentation of operating expenses.</td>
+                <td>Develop and enforce standardized expense classification 
+procedures to ensure accurate financial reporting.</td>
+            </tr>
+            <tr>
+                <td>Inventory Valuation</td>
+                <td>Overvaluation of inventory due to outdated cost assumptions 
+and inadequate periodic inventory counts.</td>
+                <td>Conduct regular inventory counts and reassess cost 
+assumptions to ensure accurate valuation of inventory.</td>
+            </tr>
+            <tr>
+                <td>Internal Controls</td>
+                <td>Weaknesses identified in the design and implementation of internal controls, 
+particularly in the area of segregation of duties.</td>
+                <td>Strengthen the internal control framework,
+including segregation of duties and regular monitoring of controls, to mitigate the risk of fraud and errors.</td>
+            </tr>
+        </table>
+    
+        <h3>Audit Opinion:</h3>
+        <p>Based on the audit procedures performed and the evidence obtained, it is our opinion that the 
+financial statements of ABC Company for the year ended December 31, 2022, present fairly, in all material respects,
+the financial position of the company in accordance with generally accepted accounting principles.</p>
+    
+        <h3>Conclusion:</h3>
+        <p>The audit identified areas where improvements are needed in the company's financial reporting processes and internal controls. 
+We recommend that management address the findings and implement the recommended actions to enhance the accuracy and reliability of financial information. 
+We appreciate the cooperation and assistance provided by the company's management and staff throughout the audit process.</p>
+    
+    </div>
+    <h2 id="feasibility-report">Feasibility Report</h2>
+    <p>Description of the Feasibility Report goes here.</p>
+
+    <h2 id="annual-report">Annual Report</h2>
+    <p>Description of the Annual Report goes here.</p>
+
+    <h2 id="incident-report">Incident Report</h2>
+    <p>Description of the Incident Report goes here.</p>
+
+    <h2 id="sales-report">Sales Report</h2>
+    <p>Description of the Sales Report goes here.</p>
+
+    <h2 id="project-report">Project Report</h2>
+    <p>Description of the Project Report goes here.</p>
+
     <script>
-     function goBack() {
-      window.history.back();
-    }
+        function goBack() {
+            window.history.back();
+        }
     </script>
 </body>
 </html>
