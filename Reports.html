@@ -18,7 +18,7 @@
             padding-left: 5%;
         }
         a {
-            color: rgb(66, 127, 146);
+            color: rgb(66, 146, 93);
         }
 
         li {
@@ -55,51 +55,24 @@
         }
         
         .report-block {
-              
-              background-color: #222;
-              padding: 10px;
-              margin-bottom: 20px;
-              margin-left: 5%;
-              border-radius: 5px;
-              overflow-x: auto;
-              overflow-y: auto;
-              white-space: pre;
-              tab-size: 2;
-              max-width: 80%;
-              max-height: 450px;
-              height: auto;
-  
-                }
-        .report-eblock {
-              
-              background-color: #222;
-              padding: 10px;
-              margin-bottom: 20px;
-              margin-left: 5%;
-              border-radius: 5px;
-              overflow-x: auto;
-              white-space: pre;
-              tab-size: 2;
-              max-width: 80%;
-              height: auto;
-  
-                }
-        .report-eeblock {
-              
-              background-color: #222;
-              padding: 10px;
-              margin-bottom: 20px;
-              margin-left: 5%;
-              border-radius: 5px;
-              overflow-x: auto;
-              overflow-y: auto;
-              white-space: pre;
-              tab-size: 2;
-              max-width: 80%;
-             max-height: 750px;
-  
-                }
-             
+            margin-top: 80px;
+            text-align: left; 
+            overflow-y: auto;
+            max-height: 550px;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #333333;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            position: relative;
+            }
+
+        pre {
+            font-family: Consolas, monospace; /* Specify the font family */
+            font-size: 14px; /* Specify the font size */
+        }
+
               table {
                 width: 100%;
                 border-collapse: collapse;
@@ -176,10 +149,13 @@
             </ol>
         </li>
     </ol>
+    <br><hr style="
+       border: 5px solid #88ca9054;border-radius: 5px; margin: 0%;">
     <h2 id="balance-sheet">Balance Sheet</h2>
     <p>Also known as the statement of financial position, the balance sheet presents a snapshot of a company's financial position at a specific point in time. It shows the company's assets, liabilities, and shareholders' equity, providing insights into its liquidity, solvency, and net worth.
     </p>
-    <div class="report-block">      
+    <div class="report-block"> 
+      <pre></pre>     
        <table>
           <tr>
             <th>Assets</th>
@@ -228,7 +204,7 @@
             <td colspan="2">$X</td>
           </tr>
         </table> 
-      </div>
+      </div><br><hr>
 
     <h2 id="income-statement">Income Statement</h2>
     <p>The Income Statement Report, also known as the Profit and Loss Statement, provides a summary of a company's revenue, expenses, and net income over a specific period. It is a financial statement that helps assess the profitability and financial performance of a business.</p>
@@ -313,7 +289,7 @@
             
         </div>
        
-    </div>
+    </div><br><hr>
     
     
      
@@ -442,7 +418,7 @@
             </tr>
         </table>
         
-    </div>
+    </div><br><hr>
 
     <h2 id="financial-ratios">Financial Ratios</h2>
     <p>A Financial Ratios Report provides an analysis of key financial ratios that help evaluate the financial performance and health of a company. Financial ratios are calculated by comparing different financial figures from the company's financial statements, such as the balance sheet and income statement.</p>
@@ -500,7 +476,7 @@
                 </table>
             </div>
         </div>
-    </div>
+    </div><br><hr>
     
 
     <h2 id="sales-performance-report">Sales Performance Report</h2>
@@ -548,27 +524,19 @@
                     <tr>
                         <td>Sales by Product/Service Category</td>
                         <td>
-                            <ul>
-                                <li>Product A: $200,000</li>
-                                <li>Product B: $150,000</li>
-                                <li>Product C: $100,000</li>
-                            </ul>
+                            Product A: $200,000 , Product B: $150,000 , Product C: $100,000
                         </td>
                     </tr>
                     <tr>
                         <td>Sales by Region/Territory</td>
                         <td>
-                            <ul>
-                                <li>Region X: $250,000</li>
-                                <li>Region Y: $200,000</li>
-                                <li>Region Z: $50,000</li>
-                            </ul>
+                           Region X: $250,000 , Region Y: $200,000 , Region Z: $50,000
                         </td>
                     </tr>
                 </table>
             </div>
         </div>
-    </div>
+    </div><br><hr>
     
 
     <h2 id="sales-forecasting-report">Sales Forecasting Report</h2>
@@ -619,7 +587,7 @@
  It is important to note that sales forecasts are subject to uncertainties and may vary based on market conditions and other factors.</p>
             </div>
         </div>
-    </div>
+    </div><br><hr>
     
     <h2 id="sales-conversion-report">Sales Conversion Report</h2>
      <p>A Sales Conversion Report tracks and analyzes the conversion rates at different stages of the sales process. It provides insights into the effectiveness of the sales funnel and identifies areas for improvement to maximize conversions and revenue.</p>
@@ -673,7 +641,7 @@
  It helps identify areas where the conversion rates can be improved and provides insights to optimize the sales process.</p>
         </div>
     </div>
-</div>
+</div><br><hr>
 
     <h2 id="customer-acquisition-report">Customer Acquisition Report</h2>
      <p>A Customer Acquisition Report provides insights into the effectiveness of marketing and sales efforts in acquiring new customers. It tracks key metrics and performance indicators to evaluate customer acquisition strategies and optimize the acquisition process.</p>
@@ -727,7 +695,7 @@
  and customer acquisition costs. It helps identify the most effective channels and provides insights to optimize customer acquisition strategies.</p>
         </div>
     </div>
-</div>
+</div><br><hr>
 
     <h2 id="market-research-report">Market Research Report</h2>
     <p>A Market Research Report provides a comprehensive analysis of a specific market or industry.
@@ -775,7 +743,7 @@ It involves collecting and analyzing data to gain insights into market trends, c
  Based on the findings, it provides recommendations on market entry strategies and potential areas for growth.</p>
         </div>
     </div>
-</div>
+</div><br><hr>
 
     <h2 id="advertising-campaign-report">Advertising Campaign Report</h2>
      <p>An Advertising Campaign Report provides an analysis of the performance and effectiveness of an advertising campaign. It evaluates key metrics and outcomes to assess the impact on brand awareness, customer engagement, and overall campaign objectives. The report helps in optimizing future advertising efforts and making data-driven decisions.</p>
@@ -830,7 +798,7 @@ It involves collecting and analyzing data to gain insights into market trends, c
 for each advertising channel. It provides insights into the effectiveness of the campaign and offers recommendations for optimizing future ad campaigns.</p>
         </div>
     </div>
-</div>
+</div><br><hr>
 
     <h2 id="social-media-analytics-report">Social Media Analytics Report</h2>
     <p>A Social Media Analytics Report provides insights and analysis of the performance and engagement on various social media platforms. It examines key metrics, user behavior, audience demographics, and content performance. The report helps in evaluating the effectiveness of social media strategies, identifying areas for improvement, and optimizing social media campaigns.</p>
@@ -882,7 +850,7 @@ for each advertising channel. It provides insights into the effectiveness of the
  It also provides insights into the demographics of the audience and recommendations for optimizing social media strategies.</p>
         </div>
     </div>
-</div>
+</div><br><hr>
 
     <h2 id="website-traffic-report">Website Traffic Report</h2>
     <p>A Website Traffic Report provides an analysis of the traffic and user behavior on a website. It examines key metrics, such as visits, page views, bounce rate, and conversion rate. The report helps in understanding the effectiveness of marketing campaigns, user engagement, and areas for website optimization.</p>
@@ -949,60 +917,61 @@ for each advertising channel. It provides insights into the effectiveness of the
 It also provides insights into traffic sources, top landing pages, and recommendations for optimizing website performance and user experience.</p>
         </div>
     </div>
-</div>
+</div><br><hr>
 
     <h2 id="research-report">Research Report</h2>
     <p>A Research Report is a comprehensive document that presents the findings, analysis, and conclusions of a research study or investigation.
 It provides detailed information about the research objectives, methodology, data collection, analysis techniques, and outcomes. 
 The report aims to communicate the research process and results to the intended audience.</p>
     
-    <div class="report-eblock">
+   <pre> <div class="report-block">
         
-            Research Report
-            
-            Title: The Impact of Social Media on Consumer Behavior
-            
-            Executive Summary:
-            The research study aimed to investigate the influence of social media on consumer behavior in the context of online shopping.
+    Research Report
+    
+    Title: The Impact of Social Media on Consumer Behavior
+    
+    Executive Summary:
+    The research study aimed to investigate the influence of social media on consumer behavior in the context of online shopping.
 The study employed a mixed-methods approach, combining surveys and interviews to gather data from a sample of 500 participants.
 The findings revealed that social media significantly influences consumer purchasing decisions, with a strong correlation between social media engagement and purchase intention.
 Based on the results, recommendations for marketers and businesses were provided to leverage social media platforms for effective consumer engagement and targeted marketing strategies.
-            
-            Introduction:
-            The rapid growth of social media platforms has transformed the way people interact, share information, and make purchasing decisions.
+    
+    Introduction:
+    The rapid growth of social media platforms has transformed the way people interact, share information, and make purchasing decisions.
 This research study seeks to explore the impact of social media on consumer behavior in the online shopping environment.
 By understanding the relationship between social media usage and consumer decision-making, businesses can develop effective marketing strategies to engage and convert customers.
-            
-            Methodology:
-            A mixed-methods approach was adopted to collect and analyze data. Firstly, an online survey was conducted among a randomly selected sample of 500 participants 
+    
+    Methodology:
+    A mixed-methods approach was adopted to collect and analyze data. Firstly, an online survey was conducted among a randomly selected sample of 500 participants 
 who had engaged in online shopping in the past six months. The survey included questions related to social media usage, purchasing behavior, and influences on decision-making.
 Additionally, in-depth interviews were conducted with a subset of 20 participants to gain deeper insights into their experiences and perceptions.
-            
-            Results:
-            The survey results indicated that 85% of respondents reported using social media platforms for product research and recommendations.
+    
+    Results:
+    The survey results indicated that 85% of respondents reported using social media platforms for product research and recommendations.
 Furthermore, 72% of participants stated that social media content directly influenced their purchase decisions. 
 The most influential factors were peer recommendations (53%), product reviews and ratings (47%), and targeted advertisements (38%).
 The interviews provided qualitative insights into the emotional and psychological aspects of social media influence on consumer behavior.
-            
-            Discussion:
-            The findings highlight the significant impact of social media on consumer behavior. The accessibility of social media platforms, coupled with the ability to share opinions and recommendations, has created 
+    
+    Discussion:
+    The findings highlight the significant impact of social media on consumer behavior. The accessibility of social media platforms, coupled with the ability to share opinions and recommendations, has created 
 a powerful environment for influencing consumer decision-making. Marketers should focus on creating engaging and shareable content to maximize brand exposure and customer reach. 
 Moreover, targeted advertising campaigns based on user preferences and behavior can enhance conversion rates.
-            
-            Conclusion:
-            In conclusion, this research study confirms the strong influence of social media on consumer behavior in the online shopping context. Businesses need to recognize the importance of social media platforms 
+    
+    Conclusion:
+    In conclusion, this research study confirms the strong influence of social media on consumer behavior in the online shopping context. Businesses need to recognize the importance of social media platforms 
 as powerful tools for engaging with consumers, building brand awareness, and influencing purchase decisions. 
 By understanding the key factors that drive consumer behavior on social media, marketers can develop effective strategies to capitalize on this influential channel.
-            
-            References:
-            - Smith, J. (2019). The impact of social media on consumer behavior. Journal of Marketing Research, 25(2), 45-62.
-            - Johnson, L. M. (2020). Social media and online consumer behavior: A comprehensive review. Journal of Consumer Psychology, 38(3), 321-338.
-           
-            
-    </div>
+    
+    References:
+    - Smith, J. (2019). The impact of social media on consumer behavior. Journal of Marketing Research, 25(2), 45-62.
+    - Johnson, L. M. (2020). Social media and online consumer behavior: A comprehensive review. Journal of Consumer Psychology, 38(3), 321-338.
+   
+    
+</div></pre><br><hr>
+
     <h2 id="progress-report">Progress Report</h2>
     <p>Description of the Progress Report goes here.</p>
-    <div class="report-eeblock" >
+    <pre><div class="report-block" >
         
         <h2>Project: Product Development - New Mobile Application</h2>
         <p>Duration: January 1, 2023 - June 30, 2023</p>
@@ -1062,7 +1031,8 @@ The project team has successfully completed key milestones, including user resea
 The upcoming phase of the project will focus on refining the application based on user feedback, conducting thorough testing, and preparing for the application's launch. 
 The team remains dedicated to delivering a high-quality mobile application that meets user expectations and contributes to our business objectives.</p>
     
-    </div>
+    </div></pre><br><hr>
+
     <h2 id="audit-report">Audit Report</h2>
     <p>Description of the Audit Report goes here.</p>
     <div class="report-block">
@@ -1122,26 +1092,293 @@ the financial position of the company in accordance with generally accepted acco
 We recommend that management address the findings and implement the recommended actions to enhance the accuracy and reliability of financial information. 
 We appreciate the cooperation and assistance provided by the company's management and staff throughout the audit process.</p>
     
-    </div>
+    </div><br><hr>
+
     <h2 id="feasibility-report">Feasibility Report</h2>
-    <p>Description of the Feasibility Report goes here.</p>
+<p>A Feasibility Report is a comprehensive document that assesses the practicality and viability of a proposed project or initiative. It provides an analysis of various factors such as technical, economic, legal, operational, and scheduling aspects to determine if the project is feasible and worth pursuing.</p>
 
-    <h2 id="annual-report">Annual Report</h2>
-    <p>Description of the Annual Report goes here.</p>
 
-    <h2 id="incident-report">Incident Report</h2>
-    <p>Description of the Incident Report goes here.</p>
 
-    <h2 id="sales-report">Sales Report</h2>
-    <p>Description of the Sales Report goes here.</p>
+<div class="report-block">
+    <h2>Feasibility Report</h2>
 
-    <h2 id="project-report">Project Report</h2>
-    <p>Description of the Project Report goes here.</p>
+    <h3>Title: [Title of the Proposed Project]</h3>
+
+    <h3>Executive Summary:</h3>
+    <p>The feasibility report assesses the practicality and viability of the proposed project. The objective is to determine whether the project is feasible and worth pursuing. The report evaluates various aspects, including technical, economic, legal, operational, and scheduling considerations. Based on the analysis conducted, it is concluded that the proposed project is [Feasible/Not Feasible]. The report highlights the key findings, recommendations, and considerations that support this conclusion. Management is recommended to carefully evaluate the findings and make informed decisions regarding the project's future.</p>
+
+    <h3>Introduction:</h3>
+    <p>This feasibility report provides an assessment of the practicality and viability of a proposed project. The objective is to determine whether the project is feasible and worth pursuing. The report evaluates various aspects, including technical, economic, legal, operational, and scheduling considerations.</p>
+
+    <h3>Feasibility Analysis:</h3>
+    <p>The feasibility analysis examines the following key areas:</p>
+
+    <!-- Rest of the content remains the same -->
+
+    <h3>Conclusion:</h3>
+    <p>Based on the analysis conducted, it is concluded that the proposed project is <strong>[Feasible/Not Feasible]</strong>. The report highlights the key findings and considerations that support this conclusion. It is recommended that management carefully evaluate the findings and make informed decisions regarding the project's future.</p>
+
+    <h3>Recommendations:</h3>
+    <p>Based on the analysis and conclusions, the following recommendations are provided:</p>
+
+    <ol>
+        <li>[Recommendation 1]</li>
+        <li>[Recommendation 2]</li>
+        <li>[Recommendation 3]</li>
+        <!-- Add more recommendations as needed -->
+    </ol>
+
+    <h3>References:</h3>
+    <p>Include a list of references or sources used during the feasibility analysis.</p>
+</div><br><hr>
+
+    
+    
+
+<h2 id="annual-report">Annual Report</h2>
+
+<p>An Annual Report is a comprehensive document that provides an overview of an organization's activities, achievements, financial performance, and future plans for a specific fiscal year. It serves as a communication tool to shareholders, stakeholders, and the public, offering transparency and accountability regarding the organization's operations.</p>
+
+<div class="report-block">
+    <h3>Title: [Title of the Organization's Annual Report]</h3>
+
+<h3>Executive Summary:</h3>
+<p>The Annual Report provides an overview of the organization's activities, financial performance, and future plans for the fiscal year. It highlights key achievements and challenges faced during the period. The report concludes that the organization has made significant progress towards its goals and outlines strategic initiatives for the upcoming year.</p>
+
+<h3>Introduction:</h3>
+<p>This Annual Report presents a comprehensive review of the organization's performance and operations during the fiscal year. It aims to provide shareholders, stakeholders, and the public with insights into the organization's activities, achievements, and challenges.</p>
+
+<h3>Financial Performance:</h3>
+<p>The financial performance section analyzes the organization's financial results for the fiscal year. It includes key financial statements such as the income statement, balance sheet, and cash flow statement. The section provides an overview of revenue, expenses, profitability, and liquidity.</p>
+
+<h3>Operational Highlights:</h3>
+<p>The operational highlights section outlines significant activities and achievements of the organization during the fiscal year. It covers areas such as product development, market expansion, partnerships, and customer satisfaction. The section demonstrates the organization's efforts in delivering its mission and strategic objectives.</p>
+
+<h3>Challenges and Opportunities:</h3>
+<p>This section discusses the challenges faced by the organization during the fiscal year and the opportunities that lie ahead. It highlights key risks, market trends, regulatory changes, or internal factors that impact the organization's operations. The section also identifies potential growth prospects and strategies to overcome challenges.</p>
+
+<h3>Future Plans:</h3>
+<p>The future plans section outlines the organization's strategic initiatives and objectives for the upcoming fiscal year. It includes expansion plans, new product launches, investment strategies, or other relevant initiatives. The section demonstrates the organization's vision and direction for the future.</p>
+
+<h3>Conclusion:</h3>
+<p>The Annual Report concludes by summarizing the organization's achievements, challenges, and future plans. It reaffirms the organization's commitment to stakeholders and emphasizes its dedication to transparency, accountability, and long-term value creation.</p>
+
+<h3>References:</h3>
+<p>Include a list of references or sources used in preparing the Annual Report.</p>
+
+</div><br><hr>
+
+
+<h2 id="incident-report">Incident Report</h2>
+
+<p>An Incident Report is a formal document that provides details about an unexpected event, accident, or incident that occurred within an organization. It aims to capture essential information about the incident, including the date, time, location, individuals involved, and a description of what happened. The report helps in documenting the incident for future reference, analysis, and preventive measures.</p>
+
+<div class="report-block">
+    <h3>Title: [Title of the Incident Report]</h3>
+
+<h3>1. Incident Details:</h3>
+<p>Provide a detailed description of the incident, including the date, time, and location. Specify the individuals involved and any witnesses. Describe the nature of the incident, such as an accident, security breach, technical failure, or other relevant information.</p>
+
+<h3>2. Incident Summary:</h3>
+<p>Summarize the incident and its impact on the organization, individuals, or systems. Include the severity level and any immediate actions taken to address the incident.</p>
+
+<h3>3. Investigation and Analysis:</h3>
+<p>Describe the steps taken to investigate the incident. Include any evidence collected, interviews conducted, or data analyzed. Provide an analysis of the root causes or contributing factors that led to the incident.</p>
+
+<h3>4. Impact Assessment:</h3>
+<p>Evaluate the impact of the incident on the organization, individuals, operations, or systems. Assess any financial, operational, reputational, or legal consequences resulting from the incident.</p>
+
+<h3>5. Response and Mitigation:</h3>
+<p>Detail the immediate response actions taken to mitigate the impact of the incident. This may include containment measures, notifications, emergency procedures, or corrective actions. Describe any measures implemented to prevent similar incidents in the future.</p>
+
+<h3>6. Lessons Learned:</h3>
+<p>Identify the key lessons learned from the incident. Highlight areas for improvement in policies, procedures, training, or infrastructure. Discuss any recommendations for preventing similar incidents and enhancing incident response capabilities.</p>
+
+<h3>7. Conclusion:</h3>
+<p>Summarize the incident report and its findings. Emphasize the importance of continuous improvement and maintaining a proactive approach to incident management.</p>
+
+<h3>8. Recommendations:</h3>
+<p>Provide specific recommendations for actions to be taken based on the incident report's findings. These recommendations may address process improvements, training programs, policy revisions, or infrastructure enhancements.</p>
+
+<h3>9. References:</h3>
+<p>Include a list of references or sources used during the incident investigation and analysis.</p>
+
+</div><br><hr>
+
+<h2 id="sales-report">Sales Report</h2>
+
+
+    <p>A Sales Report is a document that provides an analysis and summary of an organization's sales activities over a specific period. It presents key information about sales performance, revenue, customer trends, and market insights. The report helps stakeholders understand the sales performance, identify growth opportunities, and make data-driven decisions.</p>
+
+    <div class="report-block">
+<h3>Title: [Title of the Sales Report]</h3>
+
+<h3>Executive Summary:</h3>
+<p>The Executive Summary provides a high-level overview of the sales performance and key insights. It summarizes the main findings and highlights significant trends, achievements, and challenges faced during the reporting period. The report aims to provide actionable information to support strategic decision-making.</p>
+
+<h3>Introduction:</h3>
+<p>The Introduction section provides context for the Sales Report. It outlines the purpose of the report, the reporting period covered, and any relevant background information. It may also mention the sales goals and objectives set for the period.</p>
+
+<h3>Sales Performance Analysis:</h3>
+<p>The Sales Performance Analysis section delves into the detailed analysis of the sales performance. It includes the following information:</p>
+
+<ul>
+    <li>Total Sales Revenue: [Total revenue generated during the reporting period]</li>
+    <li>Product/Service Categories: [Breakdown of sales by product or service categories]</li>
+    <li>Geographical Analysis: [Sales performance across different regions or markets]</li>
+    <li>Customer Segments: [Analysis of sales by customer segments]</li>
+    <li>Key Performance Indicators (KPIs): [Metrics such as sales growth rate, average order value, customer acquisition cost, etc.]</li>
+</ul>
+
+<h3>Market and Competitor Analysis:</h3>
+<p>The Market and Competitor Analysis section provides insights into the market dynamics and competitive landscape. It may include:</p>
+
+<ul>
+    <li>Market Trends: [Relevant trends impacting the industry or market]</li>
+    <li>Competitor Analysis: [Overview of key competitors, their strategies, and market share]</li>
+    <li>Opportunities and Challenges: [Identification of growth opportunities and potential challenges in the market]</li>
+</ul>
+
+<h3>Customer Analysis:</h3>
+<p>The Customer Analysis section focuses on understanding customer behavior, preferences, and satisfaction. It may include:</p>
+
+<ul>
+    <li>Customer Demographics: [Key characteristics of the customer base]</li>
+    <li>Customer Segmentation: [Categorization of customers based on common traits or behaviors]</li>
+    <li>Customer Satisfaction: [Feedback or survey results indicating customer satisfaction levels]</li>
+    <li>Repeat Business and Retention: [Analysis of customer loyalty and repeat purchase rates]</li>
+</ul>
+
+<h3>Conclusion:</h3>
+<p>The Conclusion section summarizes the key findings from the Sales Report. It highlights the sales performance, market insights, and potential growth opportunities. It may also outline recommendations or strategies to improve sales and achieve future targets.</p>
+
+<h3>References:</h3>
+<p>Include a list of references or sources used in preparing the Sales Report.</p>
+
+</div><br><hr>
+
+<h2 id="project-report">Project Report</h2>
+
+<p>A Project Report is a comprehensive document that provides an overview of a specific project, including its objectives, implementation process, outcomes, and lessons learned. It serves as a communication tool to stakeholders, project sponsors, and team members, offering insights into the project's progress and achievements. The report helps evaluate the project's success, identify areas for improvement, and provide valuable information for future projects.</p>
+
+<div class="report-block">
+    <h3>Title: [Title of the Project Report]</h3>
+
+<h3>Executive Summary:</h3>
+<p>The Executive Summary provides a concise overview of the project and its key outcomes. It highlights the project's objectives, achievements, challenges, and recommendations for future projects. The report aims to provide stakeholders with a clear understanding of the project's impact and value.</p>
+
+<h3>Introduction:</h3>
+<p>The Introduction section provides background information about the project. It outlines the project's purpose, scope, and objectives. It may also include information about the project team, stakeholders, and any relevant contextual factors that influenced the project.</p>
+
+<h3>Project Overview:</h3>
+<p>The Project Overview section provides a detailed description of the project. It includes the following information:</p>
+
+<ul>
+    <li>Project Goals and Objectives: [Clearly defined project goals and objectives]</li>
+    <li>Project Scope: [Description of the project's boundaries and deliverables]</li>
+    <li>Project Timeline: [Key milestones and timeline for project execution]</li>
+    <li>Project Team: [Roles and responsibilities of team members]</li>
+    <li>Project Budget: [Overall budget allocation and expenditure]</li>
+</ul>
+
+<h3>Methodology and Approach:</h3>
+<p>The Methodology and Approach section describes the approach taken to execute the project. It includes information such as:</p>
+
+<ul>
+    <li>Project Planning: [Methods used for project planning and scheduling]</li>
+    <li>Resource Allocation: [Allocation of resources to project tasks]</li>
+    <li>Project Execution: [Execution strategies, methodologies, and tools used]</li>
+    <li>Risk Management: [Identification and mitigation of project risks]</li>
+    <li>Monitoring and Evaluation: [Methods used to monitor project progress and evaluate outcomes]</li>
+</ul>
+
+<h3>Project Outcomes and Deliverables:</h3>
+<p>The Project Outcomes and Deliverables section highlights the key results and deliverables achieved by the project. It includes:</p>
+
+<ul>
+    <li>Achievements: [Description of project milestones and achievements]</li>
+    <li>Deliverables: [List of tangible outputs or deliverables produced by the project]</li>
+    <li>Key Performance Indicators (KPIs): [Metrics used to measure project success]</li>
+    <li>Impact: [Evaluation of the project's impact on stakeholders and the intended beneficiaries]</li>
+</ul>
+
+<h3>Lessons Learned:</h3>
+<p>The Lessons Learned section reflects on the project's challenges, successes, and valuable insights gained throughout the project lifecycle. It may include:</p>
+
+<ul>
+    <li>Best Practices: [Identified best practices or approaches that worked well]</li>
+    <li>Challenges: [Major challenges faced during the project and how they were addressed]</li>
+    <li>Recommendations: [Lessons learned and recommendations for future projects]</li>
+</ul>
+
+<h3>Conclusion:</h3>
+<p>The Conclusion section provides a summary of the project report, highlighting its key findings, outcomes, and recommendations. It emphasizes the project's achievements, impact, and potential for future development.</p>
+
+<h3>References:</h3>
+<p>Include a list of references or sources used in preparing the Project Report.</p>
+
+</div>
+<br><br>
 
     <script>
         function goBack() {
             window.history.back();
         }
     </script>
+
+
+
+
+ 
+  <style>
+    #scroll-to-top {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 40px;
+      height: 40px;
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      line-height: 40px;
+      font-size: 20px;
+      cursor: pointer;
+      z-index: 9999;
+    }
+  </style>
+
+  
+  <!-- Content goes here -->
+  
+  <div id="scroll-to-top">&#x2191;</div>
+
+  <script>
+    window.onscroll = function() { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("scroll-to-top").style.display = "block";
+      } else {
+        document.getElementById("scroll-to-top").style.display = "none";
+      }
+    }
+
+    document.getElementById("scroll-to-top").onclick = function() {
+      scrollToTop(500); // Scroll to top with animation (500ms duration)
+    };
+
+    function scrollToTop(scrollDuration) {
+      var scrollStep = -window.scrollY / (scrollDuration / 15);
+      var scrollInterval = setInterval(function() {
+        if (window.scrollY !== 0) {
+          window.scrollBy(0, scrollStep);
+        } else {
+          clearInterval(scrollInterval);
+        }
+      }, 15);
+    }
+  </script>
+
 </body>
 </html>
