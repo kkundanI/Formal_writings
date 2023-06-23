@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Types of Agendas</title>
+  <style>
+    body {
+      background-color: #222;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      color: #fff;
+    }
+
+    h2 {
+      color: #ccc;
+    }
+
+    ol {
+      list-style-type: upper-alpha;
+      color: #ccc;
+      margin: 10px;
+      padding-left: 20px;
+    }
+
+    ol ol {
+      list-style-type: decimal;
+      margin: 10px;
+      color: #999;
+      padding-left: 20px;
+    }
+
+    li {
+      margin: 10px 0;
+    }
+
+    .back-button {
+      margin-bottom: 10px;
+      background-color: #555;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .back-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+  <button class="back-button" onclick="goBack()">Back</button>
+  <h1>Agenda :</h1>
+  <p>An agenda is a list of items or topics to be discussed or addressed during a meeting or event. It provides an outline and schedule for the proceedings and helps participants stay organized and focused.</p>
+  <h1>Types of Agendas</h1>
+  <ol>
+    <li>
+      Standard Agenda
+      <ol>
+        <li>Call to Order</li>
+        <li>Approval of Minutes</li>
+        <li>Old Business</li>
+        <li>New Business</li>
+        <li>Announcements</li>
+        <li>Adjournment</li>
+      </ol>
+    </li>
+    <li>
+      Informal Agenda
+      <ol>
+        <li>General Discussion</li>
+        <li>Open Forum</li>
+        <li>Special Presentations</li>
+        <li>Group Activities</li>
+        <li>Wrap-Up</li>
+      </ol>
+    </li>
+    <li>
+      Workshop Agenda
+      <ol>
+        <li>Welcome and Introductions</li>
+        <li>Overview of Workshop Goals</li>
+        <li>Presentations and Discussions</li>
+        <li>Breakout Sessions</li>
+        <li>Summary and Next Steps</li>
+      </ol>
+    </li>
+    <!-- Add more items for other types of agendas -->
+  </ol>
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</body>
+</html>
