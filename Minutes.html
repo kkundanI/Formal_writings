@@ -1,89 +1,703 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Types of Minutes</title>
+    <title>Minutes</title>
+    <link rel="shortcut icon" href="title_logo.png" type="image/x-icon" />
+   
     <style>
-        body {
-            background-color: #303030;
-            color: #ffffff;
+       body {
+            background-color: #1f1f1f;
+            color: #e0e0e0;
             font-family: Arial, sans-serif;
         }
+       
         h1 {
             color: #ffffff;
-        
         }
-        h2 {
-            color: #ffffff;
+        b {
+            padding-left: 5%;
         }
-        ol {
-            list-style-type: upper-alpha;
+        a {
+            color: rgb(66, 146, 93);
         }
-        ol.sublist {
-            list-style-type: decimal;
+
+        li {
+            margin-bottom: 0.5em;
         }
-        .subsection {
-            margin-left: 20px;
+        .report-type {
+            font-weight: bold;
+        }
+
+        .sub-types {
+            margin-left: 1.5em;
         }
 
         .back-button {
-      margin-bottom: 10px;
-      background-color: #555;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
+            margin-bottom: 10px;
+            background-color: #555;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
     
-    .back-button:hover {
-      background-color: #333;
+        .back-button:hover {
+            background-color: #333;
+        }
+        h2 {
+            padding: 5%;
+        }
+        
+       .p, p {
+            padding-left: 8%;
+            margin-bottom: 1.5em;
+        }
+        
+        .minute-block {
+            margin-top: 80px;
+            text-align: left; 
+            overflow-y: auto;
+            max-height: 550px;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #333333;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            position: relative;
+            }
+
+        pre {
+            font-family: Consolas, monospace; /* Specify the font family */
+            font-size: 14px; /* Specify the font size */
+        }
+
+              table {
+                width: 100%;
+                border-collapse: collapse;
+               
+              }
+          
+              th, td {
+                padding: 10px;
+                text-align: left;
+                border-bottom: 1px solid #fff;
+              }
+          
+              th {
+                background-color: #333;
+              }
+          
+              tr:nth-child(even) {
+                background-color: #444;
+              }
+              hr {
+      border: 2px solid #88ca9054;
+      border-radius: 5px;
+       margin: 5%;
     }
-    </style>
+           </style>
 </head>
 <body>
-     <button class="back-button" onclick="goBack()">Back</button>
-    <h1>Minutes of Meetings : </h1>
-   
-    <p> Minutes are written records of the proceedings and discussions that occur during meetings. 
-        They provide an overview of the topics discussed, decisions made, and actions assigned to participants.</p>
+    <button class="back-button" onclick="goBack()">Back</button>
+    <h1>Minutes of Meetings:</h1>
+    <p>Minutes are written records of the proceedings and discussions that occur during meetings. They provide an overview of the topics discussed, decisions made, and actions assigned to participants.</p>
     <h2>Types of Minutes</h2>
     
     <ol type="A">
         <li>Formal Minutes
             <ol class="sublist">
-                <li>Board Meeting Minutes</li>
-                <li>Shareholder Meeting Minutes</li>
+                <li><a href="#Board-Meeting-Minutes">Board Meeting Minutes</a></li>
+                <li><a href="#Shareholder-Meeting-Minutes">Shareholder Meeting Minutes</a></li>
             </ol>
         </li>
         <li>Informal Minutes
             <ol class="sublist">
-                <li>Team Meeting Minutes</li>
-                <li>Project Meeting Minutes</li>
+                <li><a href="#Team-Meeting-Minutes">Team Meeting Minutes</a></li>
+                <li><a href="#Project-Meeting-Minutes">Project Meeting Minutes</a></li>
             </ol>
         </li>
         <li>Action Minutes
             <ol class="sublist">
-                <li>Action-Item Minutes</li>
-                <li>Follow-Up Meeting Minutes</li>
+                <li><a href="#Action-Item-Minutes">Action-Item Minutes</a></li>
+                <li><a href="#Follow-Up-Meeting-Minutes">Follow-Up Meeting Minutes</a></li>
             </ol>
         </li>
         <li>Verbatim Minutes
             <ol class="sublist subsection">
-                <li>Literal Verbatim Minutes</li>
-                <li>Modified Verbatim Minutes</li>
+                <li><a href="#Literal-Verbatim-Minutes">Literal Verbatim Minutes</a></li>
+                <li><a href="#Modified-Verbatim-Minutes">Modified Verbatim Minutes</a></li>
             </ol>
         </li>
         <li>Summary Minutes
             <ol class="sublist subsection">
-                <li>Action-Oriented Summary Minutes</li>
-                <li>Highlights Summary Minutes</li>
+                <li><a href="#Action-Oriented-Summary-Minutes">Action-Oriented Summary Minutes</a></li>
+                <li><a href="#Highlights-Summary-Minutes">Highlights Summary Minutes</a></li>
             </ol>
         </li>
     </ol>
+    <br><hr style="border: 5px solid #88ca9054;border-radius: 5px; margin: 0%;">
+
+    <h2 id="Board-Meeting-Minutes">Board Meeting Minutes</h2>
+    <p>Board meeting minutes are a written record of the proceedings, decisions, and actions taken during a board meeting. They serve as an official document to capture the discussions and outcomes of the meeting. Here is an example of how board meeting minutes can be formatted:</p>
+    <div class="minute-block">
+        <h3>Board Meeting Minutes</h3>
+        <p>Date: [Date of the Meeting]</p>
+        <p>Location: [Meeting Location]</p>
+    
+        <h4>Attendees:</h4>
+        <ul>
+            <li>[Name 1] - [Position/Title]</li>
+            <li>[Name 2] - [Position/Title]</li>
+            <li>[Name 3] - [Position/Title]</li>
+            <!-- Add more attendees as needed -->
+        </ul>
+    
+        <h4>Agenda:</h4>
+        <ol>
+            <li>[Agenda Item 1]</li>
+            <li>[Agenda Item 2]</li>
+            <li>[Agenda Item 3]</li>
+            <!-- Add more agenda items as needed -->
+        </ol>
+    
+        <h4>Minutes:</h4>
+        <ol>
+            <li>[Agenda Item 1]</li>
+            <ul>
+                <li>[Discussion/Summary of Discussion]</li>
+                <li>[Decisions Made]</li>
+                <li>[Actions Assigned]</li>
+            </ul>
+    
+            <li>[Agenda Item 2]</li>
+            <ul>
+                <li>[Discussion/Summary of Discussion]</li>
+                <li>[Decisions Made]</li>
+                <li>[Actions Assigned]</li>
+            </ul>
+    
+            <li>[Agenda Item 3]</li>
+            <ul>
+                <li>[Discussion/Summary of Discussion]</li>
+                <li>[Decisions Made]</li>
+                <li>[Actions Assigned]</li>
+            </ul>
+            <!-- Add more agenda items with discussions, decisions, and actions as needed -->
+        </ol>
+    
+        <h4>Next Meeting:</h4>
+        <p>The next board meeting is scheduled for [Date of Next Meeting] at [Location of Next Meeting].</p>
+    
+        <h4>Adjournment:</h4>
+        <p>The meeting was adjourned at [Time of Adjournment].</p>
+    </div><br><hr>
+    
+
+    <h2 id="Shareholder-Meeting-Minutes">Shareholder Meeting Minutes</h2>
+    <p>Shareholder meeting minutes are an essential record of the discussions, resolutions, and actions taken during a meeting of the shareholders of a company. They serve as an official document to document the proceedings and decisions made during the meeting. Here is an example of how shareholder meeting minutes can be formatted:</p>
+    <div class="minute-block">
+        <h3>Shareholder Meeting Minutes</h3>
+        <p>Date: [Date of the Meeting]</p>
+        <p>Location: [Meeting Location]</p>
+    
+        <h4>Attendees:</h4>
+        <ul>
+            <li>[Shareholder Name 1] - [Number of Shares Held]</li>
+            <li>[Shareholder Name 2] - [Number of Shares Held]</li>
+            <li>[Shareholder Name 3] - [Number of Shares Held]</li>
+            <!-- Add more shareholders as needed -->
+        </ul>
+    
+        <h4>Agenda:</h4>
+        <ol>
+            <li>[Agenda Item 1]</li>
+            <li>[Agenda Item 2]</li>
+            <li>[Agenda Item 3]</li>
+            <!-- Add more agenda items as needed -->
+        </ol>
+    
+        <h4>Minutes:</h4>
+        <ol>
+            <li>[Agenda Item 1]</li>
+            <ul>
+                <li>[Discussion/Summary of Discussion]</li>
+                <li>[Resolution/Decision Made]</li>
+                <li>[Actions Assigned]</li>
+            </ul>
+    
+            <li>[Agenda Item 2]</li>
+            <ul>
+                <li>[Discussion/Summary of Discussion]</li>
+                <li>[Resolution/Decision Made]</li>
+                <li>[Actions Assigned]</li>
+            </ul>
+    
+            <li>[Agenda Item 3]</li>
+            <ul>
+                <li>[Discussion/Summary of Discussion]</li>
+                <li>[Resolution/Decision Made]</li>
+                <li>[Actions Assigned]</li>
+            </ul>
+            <!-- Add more agenda items with discussions, resolutions, and actions as needed -->
+        </ol>
+    
+        <h4>Next Meeting:</h4>
+        <p>The next shareholder meeting is scheduled for [Date of Next Meeting] at [Location of Next Meeting].</p>
+    
+        <h4>Adjournment:</h4>
+        <p>The meeting was adjourned at [Time of Adjournment].</p>
+    </div><br><hr>
+    
+
+    <h2 id="Team-Meeting-Minutes">Team Meeting Minutes</h2>
+    <p>Team meeting minutes are important for documenting the discussions, decisions, and action items addressed during a team meeting. They provide a written record of the meeting proceedings and serve as a reference for team members. Here is an example of how team meeting minutes can be formatted:</p>
+    <div class="minute-block">
+        <h3>Team Meeting Minutes</h3>
+        <p>Date: [Date of the Meeting]</p>
+        <p>Location: [Meeting Location]</p>
+    
+        <h4>Attendees:</h4>
+        <ul>
+            <li>[Team Member 1]</li>
+            <li>[Team Member 2]</li>
+            <li>[Team Member 3]</li>
+            <!-- Add more team members as needed -->
+        </ul>
+    
+        <h4>Agenda:</h4>
+        <ol>
+            <li>[Agenda Item 1]</li>
+            <li>[Agenda Item 2]</li>
+            <li>[Agenda Item 3]</li>
+            <!-- Add more agenda items as needed -->
+        </ol>
+    
+        <h4>Minutes:</h4>
+        <ol>
+            <li>[Agenda Item 1]</li>
+            <ul>
+                <li>[Discussion/Summary of Discussion]</li>
+                <li>[Decisions Made]</li>
+                <li>[Action Items Assigned]</li>
+            </ul>
+    
+            <li>[Agenda Item 2]</li>
+            <ul>
+                <li>[Discussion/Summary of Discussion]</li>
+                <li>[Decisions Made]</li>
+                <li>[Action Items Assigned]</li>
+            </ul>
+    
+            <li>[Agenda Item 3]</li>
+            <ul>
+                <li>[Discussion/Summary of Discussion]</li>
+                <li>[Decisions Made]</li>
+                <li>[Action Items Assigned]</li>
+            </ul>
+            <!-- Add more agenda items with discussions, decisions, and action items as needed -->
+        </ol>
+    
+        <h4>Next Meeting:</h4>
+        <p>The next team meeting is scheduled for [Date of Next Meeting] at [Location of Next Meeting].</p>
+    
+        <h4>Adjournment:</h4>
+        <p>The meeting was adjourned at [Time of Adjournment].</p>
+    </div><br><hr>
+    
+
+    <h2 id="Project-Meeting-Minutes">Project Meeting Minutes</h2>
+    <p>Project meeting minutes are crucial for documenting the discussions, decisions, and action items addressed during a project meeting. They serve as an official record of the meeting proceedings and help keep all project team members informed. Here is an example of how project meeting minutes can be formatted:</p>
+    <div class="minute-block">
+        <h3>Project Meeting Minutes</h3>
+        <p>Date: [Date of the Meeting]</p>
+        <p>Location: [Meeting Location]</p>
+    
+        <h4>Attendees:</h4>
+        <ul>
+            <li>[Team Member 1]</li>
+            <li>[Team Member 2]</li>
+            <li>[Team Member 3]</li>
+            <!-- Add more team members as needed -->
+        </ul>
+    
+        <h4>Agenda:</h4>
+        <ol>
+            <li>[Agenda Item 1]</li>
+            <li>[Agenda Item 2]</li>
+            <li>[Agenda Item 3]</li>
+            <!-- Add more agenda items as needed -->
+        </ol>
+    
+        <h4>Minutes:</h4>
+        <ol>
+            <li>[Agenda Item 1]</li>
+            <ul>
+                <li>[Discussion/Summary of Discussion]</li>
+                <li>[Decisions Made]</li>
+                <li>[Action Items Assigned]</li>
+            </ul>
+    
+            <li>[Agenda Item 2]</li>
+            <ul>
+                <li>[Discussion/Summary of Discussion]</li>
+                <li>[Decisions Made]</li>
+                <li>[Action Items Assigned]</li>
+            </ul>
+    
+            <li>[Agenda Item 3]</li>
+            <ul>
+                <li>[Discussion/Summary of Discussion]</li>
+                <li>[Decisions Made]</li>
+                <li>[Action Items Assigned]</li>
+            </ul>
+            <!-- Add more agenda items with discussions, decisions, and action items as needed -->
+        </ol>
+    
+        <h4>Next Meeting:</h4>
+        <p>The next project meeting is scheduled for [Date of Next Meeting] at [Location of Next Meeting].</p>
+    
+        <h4>Adjournment:</h4>
+        <p>The meeting was adjourned at [Time of Adjournment].</p>
+    </div><br><hr>
+    
+    <h2 id="Action-Item-Minutes">Action-Item Minutes</h2>
+    <p>Action-item minutes are used to document the specific action items assigned during a meeting, along with the responsible parties and deadlines. They serve as a reference for tracking progress and ensuring accountability. Here is an example of how action-item minutes can be formatted:</p>
+    <div class="minute-block">
+        <h3>Action-Item Minutes</h3>
+        <p>Date: [Date of the Meeting]</p>
+        <p>Location: [Meeting Location]</p>
+    
+        <h4>Attendees:</h4>
+        <ul>
+            <li>[Participant 1]</li>
+            <li>[Participant 2]</li>
+            <li>[Participant 3]</li>
+            <!-- Add more participants as needed -->
+        </ul>
+    
+        <h4>Action Items:</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Action Item</th>
+                    <th>Assigned To</th>
+                    <th>Deadline</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[Action Item 1]</td>
+                    <td>[Responsible Party 1]</td>
+                    <td>[Deadline 1]</td>
+                </tr>
+                <tr>
+                    <td>[Action Item 2]</td>
+                    <td>[Responsible Party 2]</td>
+                    <td>[Deadline 2]</td>
+                </tr>
+                <tr>
+                    <td>[Action Item 3]</td>
+                    <td>[Responsible Party 3]</td>
+                    <td>[Deadline 3]</td>
+                </tr>
+                <!-- Add more action items with responsible parties and deadlines as needed -->
+            </tbody>
+        </table>
+    
+        <h4>Next Meeting:</h4>
+        <p>The next meeting is scheduled for [Date of Next Meeting] at [Location of Next Meeting].</p>
+    
+        <h4>Adjournment:</h4>
+        <p>The meeting was adjourned at [Time of Adjournment].</p>
+    </div><br><hr>
+    
+
+    <h2 id="Follow-Up-Meeting-Minutes">Follow-Up Meeting Minutes</h2>
+    <p>Follow-up meeting minutes are important for documenting the progress, updates, and outcomes of a subsequent meeting held to review previous action items or discussions. They provide a record of the follow-up meeting proceedings and help track the status of tasks. Here is an example of how follow-up meeting minutes can be formatted:</p>
+    <div class="minute-block">
+        <h3>Follow-Up Meeting Minutes</h3>
+        <p>Date: [Date of the Meeting]</p>
+        <p>Location: [Meeting Location]</p>
+    
+        <h4>Attendees:</h4>
+        <ul>
+            <li>[Participant 1]</li>
+            <li>[Participant 2]</li>
+            <li>[Participant 3]</li>
+            <!-- Add more participants as needed -->
+        </ul>
+    
+        <h4>Agenda:</h4>
+        <ol>
+            <li>[Agenda Item 1]</li>
+            <li>[Agenda Item 2]</li>
+            <li>[Agenda Item 3]</li>
+            <!-- Add more agenda items as needed -->
+        </ol>
+    
+        <h4>Minutes:</h4>
+        <ol>
+            <li>[Agenda Item 1]</li>
+            <ul>
+                <li>[Progress/Update]</li>
+                <li>[New Decisions Made]</li>
+                <li>[New Action Items Assigned]</li>
+            </ul>
+    
+            <li>[Agenda Item 2]</li>
+            <ul>
+                <li>[Progress/Update]</li>
+                <li>[New Decisions Made]</li>
+                <li>[New Action Items Assigned]</li>
+            </ul>
+    
+            <li>[Agenda Item 3]</li>
+            <ul>
+                <li>[Progress/Update]</li>
+                <li>[New Decisions Made]</li>
+                <li>[New Action Items Assigned]</li>
+            </ul>
+            <!-- Add more agenda items with progress, decisions, and action items as needed -->
+        </ol>
+    
+        <h4>Next Steps:</h4>
+        <p>Based on the follow-up meeting discussions, the following next steps were identified:</p>
+        <ul>
+            <li>[Next Step 1]</li>
+            <li>[Next Step 2]</li>
+            <li>[Next Step 3]</li>
+            <!-- Add more next steps as needed -->
+        </ul>
+    
+        <h4>Next Meeting:</h4>
+        <p>The next meeting is scheduled for [Date of Next Meeting] at [Location of Next Meeting].</p>
+    
+        <h4>Adjournment:</h4>
+        <p>The meeting was adjourned at [Time of Adjournment].</p>
+    </div><br><hr>
+    
+
+    <h2 id="Literal-Verbatim-Minutes">Literal Verbatim Minutes</h2>
+    <p>Literal verbatim minutes are a precise record of a meeting, capturing the exact words spoken by participants. They provide a detailed account of the discussions, presentations, and decisions made during the meeting. Here is an example of how literal verbatim minutes can be formatted:</p>
+     <div class="minute-block">
+        <h3>Literal Verbatim Minutes</h3>
+        <p>Date: [Date of the Meeting]</p>
+        <p>Location: [Meeting Location]</p>
+    
+        <h4>Attendees:</h4>
+        <ul>
+            <li>[Participant 1]</li>
+            <li>[Participant 2]</li>
+            <li>[Participant 3]</li>
+            <!-- Add more participants as needed -->
+        </ul>
+    
+        <h4>Minutes:</h4>
+        <ol>
+            <li>[Start of the Meeting]</li>
+            <p>[Exact transcript of the conversation]</p>
+    
+            <li>[Agenda Item 1]</li>
+            <p>[Exact transcript of the conversation]</p>
+    
+            <li>[Agenda Item 2]</li>
+            <p>[Exact transcript of the conversation]</p>
+    
+            <li>[Agenda Item 3]</li>
+            <p>[Exact transcript of the conversation]</p>
+            <!-- Add more agenda items with verbatim conversation as needed -->
+        </ol>
+    
+        <h4>Next Meeting:</h4>
+        <p>The next meeting is scheduled for [Date of Next Meeting] at [Location of Next Meeting].</p>
+    
+        <h4>Adjournment:</h4>
+        <p>The meeting was adjourned at [Time of Adjournment].</p>
+    </div><br><hr>
+    
+    <h2 id="Modified-Verbatim-Minutes">Modified Verbatim Minutes</h2>
+    <p>Modified verbatim minutes provide a detailed record of a meeting, summarizing the key points, decisions, and action items discussed. They capture the essence of the discussions while maintaining accuracy and conciseness. Here is an example of how modified verbatim minutes can be formatted:</p>
+<div class="minute-block">
+    <h3>Modified Verbatim Minutes</h3>
+    <p>Date: [Date of the Meeting]</p>
+    <p>Location: [Meeting Location]</p>
+
+    <h4>Attendees:</h4>
+    <ul>
+        <li>[Participant 1]</li>
+        <li>[Participant 2]</li>
+        <li>[Participant 3]</li>
+        <!-- Add more participants as needed -->
+    </ul>
+
+    <h4>Agenda:</h4>
+    <ol>
+        <li>[Agenda Item 1]</li>
+        <li>[Agenda Item 2]</li>
+        <li>[Agenda Item 3]</li>
+        <!-- Add more agenda items as needed -->
+    </ol>
+
+    <h4>Minutes:</h4>
+    <ol>
+        <li>[Agenda Item 1]</li>
+        <ul>
+            <li>[Summary of key points discussed]</li>
+            <li>[Decisions made]</li>
+            <li>[Action items assigned]</li>
+        </ul>
+
+        <li>[Agenda Item 2]</li>
+        <ul>
+            <li>[Summary of key points discussed]</li>
+            <li>[Decisions made]</li>
+            <li>[Action items assigned]</li>
+        </ul>
+
+        <li>[Agenda Item 3]</li>
+        <ul>
+            <li>[Summary of key points discussed]</li>
+            <li>[Decisions made]</li>
+            <li>[Action items assigned]</li>
+        </ul>
+        <!-- Add more agenda items with summary, decisions, and action items as needed -->
+    </ol>
+
+    <h4>Next Steps:</h4>
+    <p>Based on the meeting discussions, the following next steps were identified:</p>
+    <ul>
+        <li>[Next Step 1]</li>
+        <li>[Next Step 2]</li>
+        <li>[Next Step 3]</li>
+        <!-- Add more next steps as needed -->
+    </ul>
+
+    <h4>Next Meeting:</h4>
+    <p>The next meeting is scheduled for [Date of Next Meeting] at [Location of Next Meeting].</p>
+
+    <h4>Adjournment:</h4>
+    <p>The meeting was adjourned at [Time of Adjournment].</p>
+</div><br><hr>
+
+
+    <h2 id="Action-Oriented-Summary-Minutes">Action-Oriented Summary Minutes</h2>
+    <p>Action-oriented summary minutes provide a condensed record of a meeting, highlighting the key outcomes, decisions, and action steps. They focus on capturing actionable items and follow-up tasks. Here is an example of how action-oriented summary minutes can be formatted:</p>
+<div class="minute-block">
+    <h3>Action-Oriented Summary Minutes</h3>
+    <p>Date: [Date of the Meeting]</p>
+    <p>Location: [Meeting Location]</p>
+
+    <h4>Attendees:</h4>
+    <ul>
+        <li>[Participant 1]</li>
+        <li>[Participant 2]</li>
+        <li>[Participant 3]</li>
+        <!-- Add more participants as needed -->
+    </ul>
+
+    <h4>Agenda:</h4>
+    <ol>
+        <li>[Agenda Item 1]</li>
+        <li>[Agenda Item 2]</li>
+        <li>[Agenda Item 3]</li>
+        <!-- Add more agenda items as needed -->
+    </ol>
+
+    <h4>Minutes:</h4>
+    <ol>
+        <li>[Agenda Item 1]</li>
+        <ul>
+            <li>[Key decision or outcome]</li>
+            <li>[Action item 1]</li>
+            <li>[Action item 2]</li>
+        </ul>
+
+        <li>[Agenda Item 2]</li>
+        <ul>
+            <li>[Key decision or outcome]</li>
+            <li>[Action item 1]</li>
+            <li>[Action item 2]</li>
+        </ul>
+
+        <li>[Agenda Item 3]</li>
+        <ul>
+            <li>[Key decision or outcome]</li>
+            <li>[Action item 1]</li>
+            <li>[Action item 2]</li>
+        </ul>
+        <!-- Add more agenda items with key decisions and corresponding action items as needed -->
+    </ol>
+
+    <h4>Next Steps:</h4>
+    <p>The following action steps were identified during the meeting:</p>
+    <ul>
+        <li>[Action step 1]</li>
+        <li>[Action step 2]</li>
+        <li>[Action step 3]</li>
+        <!-- Add more action steps as needed -->
+    </ul>
+
+    <h4>Next Meeting:</h4>
+    <p>The next meeting is scheduled for [Date of Next Meeting] at [Location of Next Meeting].</p>
+
+    <h4>Adjournment:</h4>
+    <p>The meeting was adjourned at [Time of Adjournment].</p>
+</div><br><hr>
+
+    <h2 id="Highlights-Summary-Minutes">Highlights Summary Minutes</h2>
+    <p>Highlights summary minutes provide a concise overview of the key highlights, decisions, and discussions during a meeting. They capture the most significant points and outcomes, allowing readers to quickly grasp the key takeaways. Here is an example of how highlights summary minutes can be formatted:</p>
+<div class="minute-block">
+    <h3>Highlights Summary Minutes</h3>
+    <p>Date: [Date of the Meeting]</p>
+    <p>Location: [Meeting Location]</p>
+
+    <h4>Attendees:</h4>
+    <ul>
+        <li>[Participant 1]</li>
+        <li>[Participant 2]</li>
+        <li>[Participant 3]</li>
+        <!-- Add more participants as needed -->
+    </ul>
+
+    <h4>Agenda:</h4>
+    <ol>
+        <li>[Agenda Item 1]</li>
+        <li>[Agenda Item 2]</li>
+        <li>[Agenda Item 3]</li>
+        <!-- Add more agenda items as needed -->
+    </ol>
+
+    <h4>Minutes:</h4>
+    <ul>
+        <li><strong>[Agenda Item 1]:</strong> [Key highlight or decision]</li>
+        <li><strong>[Agenda Item 2]:</strong> [Key highlight or decision]</li>
+        <li><strong>[Agenda Item 3]:</strong> [Key highlight or decision]</li>
+        <!-- Add more agenda items with key highlights or decisions as needed -->
+    </ul>
+
+    <h4>Next Steps:</h4>
+    <p>The following next steps were identified during the meeting:</p>
+    <ul>
+        <li>[Next step 1]</li>
+        <li>[Next step 2]</li>
+        <li>[Next step 3]</li>
+        <!-- Add more next steps as needed -->
+    </ul>
+
+    <h4>Next Meeting:</h4>
+    <p>The next meeting is scheduled for [Date of Next Meeting] at [Location of Next Meeting].</p>
+
+    <h4>Adjournment:</h4>
+    <p>The meeting was adjourned at [Time of Adjournment].</p>
+</div><br><br>
+
+
     <script>
         function goBack() {
-         window.history.back();
-       }
-     </script>
+            window.history.back();
+        }
+    </script>
 </body>
 </html>
