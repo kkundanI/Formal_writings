@@ -82,7 +82,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 5;
   
   height: auto;
      background-color: #4d4d4d;
@@ -125,7 +125,8 @@ body {
   display: none;
 }
 
-@media (max-width:641px) {
+ 
+@media (max-width:1055px) {
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
