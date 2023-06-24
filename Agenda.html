@@ -1,52 +1,102 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Types of Agendas</title>
+  <title>Agendas</title>
+  <link rel="shortcut icon" href="title_logo.png" type="image/x-icon" />
+   
   <style>
     body {
-      background-color: #222;
-      color: #fff;
-      font-family: Arial, sans-serif;
+        background-color: #1f1f1f;
+        color: #e0e0e0;
+        font-family: Arial, sans-serif;
     }
-
+   
     h1 {
-      color: #fff;
+        color: #ffffff;
     }
-
-    h2 {
-      color: #ccc;
+    b {
+        padding-left: 5%;
     }
-
-    ol {
-      list-style-type: upper-alpha;
-      color: #ccc;
-      margin: 10px;
-      padding-left: 20px;
-    }
-
-    ol ol {
-      list-style-type: decimal;
-      margin: 10px;
-      color: #999;
-      padding-left: 20px;
+    a {
+        color: rgb(66, 146, 93);
     }
 
     li {
-      margin: 10px 0;
+        margin-bottom: 0.5em;
+    }
+    .report-type {
+        font-weight: bold;
+    }
+
+    .sub-types {
+        margin-left: 1.5em;
     }
 
     .back-button {
-      margin-bottom: 10px;
-      background-color: #555;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
+        margin-bottom: 10px;
+        background-color: #555;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
     }
-    
+
     .back-button:hover {
-      background-color: #333;
+        background-color: #333;
+    }
+    h2 {
+        padding: 5%;
+    }
+
+    .p,
+    p {
+        padding-left: 8%;
+        margin-bottom: 1.5em;
+    }
+
+    .agenda-block {
+        margin-top: 80px;
+        text-align: left;
+        overflow-y: auto;
+        max-height: 550px;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px;
+        background-color: #333333;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        position: relative;
+    }
+
+    pre {
+        font-family: Consolas, monospace; /* Specify the font family */
+        font-size: 14px; /* Specify the font size */
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #fff;
+    }
+
+    th {
+        background-color: #333;
+    }
+
+    tr:nth-child(even) {
+        background-color: #444;
+    }
+    hr {
+      border: 2px solid #88ca9054;
+      border-radius: 5px;
+       margin: 5%;
     }
   </style>
 </head>
@@ -59,40 +109,760 @@
     <li>
       Standard Agenda
       <ol>
-        <li>Call to Order</li>
-        <li>Approval of Minutes</li>
-        <li>Old Business</li>
-        <li>New Business</li>
-        <li>Announcements</li>
-        <li>Adjournment</li>
+        <li><a href="#Call-to-Order">Call to Order</a></li>
+        <li><a href="#Approval-of-Minutes">Approval of Minutes</a></li>
+        <li><a href="#Old-Business">Old Business</a></li>
+        <li> <a href="#New-Business">New Business</a></li>
+        <li><a href="#Announcements">Announcements</a></li>
+        <li><a href="#Adjournment">Adjournment</a></li>
       </ol>
     </li>
     <li>
       Informal Agenda
       <ol>
-        <li>General Discussion</li>
-        <li>Open Forum</li>
-        <li>Special Presentations</li>
-        <li>Group Activities</li>
-        <li>Wrap-Up</li>
+        <li><a href="#General-Discussion">General Discussion</a></li>
+        <li><a href="#Open-Forum">Open Forum</a></li>
+        <li><a href="#Special-Presentations">Special Presentations</a></li>
+        <li><a href="#Group-Activities">Group Activities</a></li>
+        <li><a href="#Wrap-Up">Wrap-Up</a></li>
       </ol>
     </li>
     <li>
       Workshop Agenda
       <ol>
-        <li>Welcome and Introductions</li>
-        <li>Overview of Workshop Goals</li>
-        <li>Presentations and Discussions</li>
-        <li>Breakout Sessions</li>
-        <li>Summary and Next Steps</li>
+        <li><a href="#Welcome-and-Introductions">Welcome and Introductions</a></li>
+        <li><a href="#Overview-of-Workshop-Goals">Overview of Workshop Goals</a></li>
+        <li><a href="#Presentations-and-Discussions">Presentations and Discussions</a></li>
+        <li><a href="#Breakout-Sessions">Breakout Sessions</a></li>
+        <li><a href="#Summary-and-Next-Steps">Summary and Next Steps</a></li>
       </ol>
     </li>
     <!-- Add more items for other types of agendas -->
   </ol>
-  <script>
+  <br><hr style="border: 5px solid #88ca9054;border-radius: 5px; margin: 0%;">
+
+  <h2 id="Call-to-Order">Call to Order</h2>
+ <p>A Call to Order Agenda is a document used to outline the order of business and topics to be discussed during a meeting. It typically begins with a formal call to order, followed by the agenda items to be addressed. Here is an example of how a Call to Order Agenda can be formatted:</p>
+  
+  <div class="agenda-block">
+      <h3>Call to Order Agenda</h3>
+  
+      <h4>Date: [Date of the Meeting]</h4>
+  
+      <h4>Meeting Start Time: [Start Time]</h4>
+  
+      <h4>Location: [Meeting Location]</h4>
+  
+      <h4>Call to Order</h4>
+  
+      <p>The meeting is called to order at [Start Time] by [Meeting Chair's Name], [Meeting Chair's Position].</p>
+  
+      <h4>Agenda</h4>
+  
+      <ol>
+          <li>[Agenda Item 1]</li>
+          <li>[Agenda Item 2]</li>
+          <li>[Agenda Item 3]</li>
+          <!-- Add more agenda items as needed -->
+      </ol>
+  
+      <h4>Agenda Details:</h4>
+  
+      <ol>
+          <li>
+              <strong>[Agenda Item 1]</strong>
+              <ul>
+                  <li>[Discussion/Action 1]</li>
+                  <li>[Discussion/Action 2]</li>
+                  <!-- Add more discussion/action points as needed -->
+              </ul>
+          </li>
+          <li>
+              <strong>[Agenda Item 2]</strong>
+              <ul>
+                  <li>[Discussion/Action 1]</li>
+                  <li>[Discussion/Action 2]</li>
+                  <!-- Add more discussion/action points as needed -->
+              </ul>
+          </li>
+          <li>
+              <strong>[Agenda Item 3]</strong>
+              <ul>
+                  <li>[Discussion/Action 1]</li>
+                  <li>[Discussion/Action 2]</li>
+                  <!-- Add more discussion/action points as needed -->
+              </ul>
+          </li>
+      </ol>
+  
+      <h4>Adjournment</h4>
+  
+      <p>The meeting is adjourned at [End Time] by [Meeting Chair's Name], [Meeting Chair's Position].</p>
+  </div>
+  
+  <br><hr>
+  <h2 id="Approval-of-Minutes">Approval of Minutes</h2>
+ 
+  <p>An Approval of Minutes Agenda is a document used to outline the order of business and topics related to the approval of meeting minutes during a meeting. It typically includes a call to order, review of previous meeting minutes, discussion, and the approval process. Here is an example of how an Approval of Minutes Agenda can be formatted:</p>
+  
+  <div class="agenda-block">
+      <h3>Approval of Minutes Agenda</h3>
+  
+      <h4>Date: [Date of the Meeting]</h4>
+  
+      <h4>Meeting Start Time: [Start Time]</h4>
+  
+      <h4>Location: [Meeting Location]</h4>
+  
+      <h4>Call to Order</h4>
+  
+      <p>The meeting is called to order at [Start Time] by [Meeting Chair's Name], [Meeting Chair's Position].</p>
+  
+      <h4>Approval of Minutes</h4>
+  
+      <ol>
+          <li>Review of Previous Meeting Minutes</li>
+          <li>Discussion and Amendments</li>
+          <li>Approval Process</li>
+      </ol>
+  
+      <h4>Review of Previous Meeting Minutes</h4>
+  
+      <p>The minutes from the previous meeting held on [Previous Meeting Date] are presented for review and discussion.</p>
+  
+      <h4>Discussion and Amendments</h4>
+  
+      <p>Members are given the opportunity to provide comments, propose amendments, or suggest corrections to the minutes.</p>
+  
+      <h4>Approval Process</h4>
+  
+      <p>Once the discussion and amendments are complete, a motion is made to approve the minutes as presented or as amended. The motion is seconded, followed by a vote for approval.</p>
+  
+      <h4>Adjournment</h4>
+  
+      <p>The meeting is adjourned at [End Time] by [Meeting Chair's Name], [Meeting Chair's Position].</p>
+  </div>
+  
+
+  <br><hr>
+  <h2 id="Old-Business">Old Business</h2>
+  <p>An Old Business Agenda is a document used to outline the order of business and topics related to ongoing or previously discussed matters during a meeting. It typically includes a call to order, review of previous meeting minutes, updates on old business items, and any necessary actions or decisions. Here is an example of how an Old Business Agenda can be formatted:</p>
+  
+  <div class="agenda-block">
+      <h3>Old Business Agenda</h3>
+  
+      <h4>Date: [Date of the Meeting]</h4>
+  
+      <h4>Meeting Start Time: [Start Time]</h4>
+  
+      <h4>Location: [Meeting Location]</h4>
+  
+      <h4>Call to Order</h4>
+  
+      <p>The meeting is called to order at [Start Time] by [Meeting Chair's Name], [Meeting Chair's Position].</p>
+  
+      <h4>Review of Previous Meeting Minutes</h4>
+  
+      <p>The minutes from the previous meeting held on [Previous Meeting Date] are presented for review and approval.</p>
+  
+      <h4>Updates on Old Business Items</h4>
+  
+      <ol>
+          <li>[Old Business Item 1]</li>
+          <li>[Old Business Item 2]</li>
+          <li>[Old Business Item 3]</li>
+          <!-- Add more old business items as needed -->
+      </ol>
+  
+      <h4>[Old Business Item 1]</h4>
+  
+      <p>Provide an update on the progress, developments, or any relevant information related to [Old Business Item 1].</p>
+  
+      <h4>[Old Business Item 2]</h4>
+  
+      <p>Provide an update on the progress, developments, or any relevant information related to [Old Business Item 2].</p>
+  
+      <h4>[Old Business Item 3]</h4>
+  
+      <p>Provide an update on the progress, developments, or any relevant information related to [Old Business Item 3].</p>
+  
+      <h4>Actions and Decisions</h4>
+  
+      <p>Discuss any actions or decisions that need to be made based on the updates provided for the old business items.</p>
+  
+      <h4>Adjournment</h4>
+  
+      <p>The meeting is adjourned at [End Time] by [Meeting Chair's Name], [Meeting Chair's Position].</p>
+  </div>
+  
+  <br><hr>
+  <h2 id="New-Business">New Business</h2>
+    <p>A New Business Agenda is a document used to outline the order of business and topics related to new or upcoming matters during a meeting. It typically includes a call to order, review of previous meeting minutes, introduction of new business items, discussion, and any necessary actions or decisions. Here is an example of how a New Business Agenda can be formatted:</p>
+  <div class="agenda-block">
+      <h3>New Business Agenda</h3>
+  
+      <h4>Date: [Date of the Meeting]</h4>
+  
+      <h4>Meeting Start Time: [Start Time]</h4>
+  
+      <h4>Location: [Meeting Location]</h4>
+  
+      <h4>Call to Order</h4>
+  
+      <p>The meeting is called to order at [Start Time] by [Meeting Chair's Name], [Meeting Chair's Position].</p>
+  
+      <h4>Review of Previous Meeting Minutes</h4>
+  
+      <p>The minutes from the previous meeting held on [Previous Meeting Date] are presented for review and approval.</p>
+  
+      <h4>Introduction of New Business Items</h4>
+  
+      <ol>
+          <li>[New Business Item 1]</li>
+          <li>[New Business Item 2]</li>
+          <li>[New Business Item 3]</li>
+          <!-- Add more new business items as needed -->
+      </ol>
+  
+      <h4>[New Business Item 1]</h4>
+  
+      <p>Present and discuss the details, purpose, or any relevant information related to [New Business Item 1].</p>
+  
+      <h4>[New Business Item 2]</h4>
+  
+      <p>Present and discuss the details, purpose, or any relevant information related to [New Business Item 2].</p>
+  
+      <h4>[New Business Item 3]</h4>
+  
+      <p>Present and discuss the details, purpose, or any relevant information related to [New Business Item 3].</p>
+  
+      <h4>Actions and Decisions</h4>
+  
+      <p>Discuss any actions or decisions that need to be made based on the new business items presented and discussed.</p>
+  
+      <h4>Adjournment</h4>
+  
+      <p>The meeting is adjourned at [End Time] by [Meeting Chair's Name], [Meeting Chair's Position].</p>
+  </div>
+  
+  
+  <br><hr>
+  <h2 id="Announcements">Announcements</h2>
+ <p>An Announcement Agenda is a document used to outline the order of business and topics related to making important announcements during a meeting or event. It typically includes a call to order, introduction of the agenda, announcement details, and any necessary discussion or follow-up. Here is an example of how an Announcement Agenda can be formatted:</p>
+   <div class="agenda-block">
+      <h3>Announcement Agenda</h3>
+  
+      <h4>Date: [Date of the Meeting]</h4>
+  
+      <h4>Meeting Start Time: [Start Time]</h4>
+  
+      <h4>Location: [Meeting Location]</h4>
+  
+      <h4>Call to Order</h4>
+  
+      <p>The meeting is called to order at [Start Time] by [Meeting Chair's Name], [Meeting Chair's Position].</p>
+  
+      <h4>Introduction of the Agenda</h4>
+  
+      <p>The purpose of this meeting is to make important announcements regarding:</p>
+  
+      <ol>
+          <li>[Announcement Topic 1]</li>
+          <li>[Announcement Topic 2]</li>
+          <li>[Announcement Topic 3]</li>
+          <!-- Add more announcement topics as needed -->
+      </ol>
+  
+      <h4>[Announcement Topic 1]</h4>
+  
+      <p>Provide details and background information about [Announcement Topic 1].</p>
+  
+      <h4>[Announcement Topic 2]</h4>
+  
+      <p>Provide details and background information about [Announcement Topic 2].</p>
+  
+      <h4>[Announcement Topic 3]</h4>
+  
+      <p>Provide details and background information about [Announcement Topic 3].</p>
+  
+      <h4>Discussion and Follow-up</h4>
+  
+      <p>Allow time for participants to ask questions, provide feedback, or discuss any related matters concerning the announcements made.</p>
+  
+      <h4>Adjournment</h4>
+  
+      <p>The meeting is adjourned at [End Time] by [Meeting Chair's Name], [Meeting Chair's Position].</p>
+  </div>
+  
+  <br><hr>
+  <h2 id="Adjournment">Adjournment</h2>
+   <p>An Adjournment Agenda is a document used to outline the order of business and topics related to the conclusion and adjournment of a meeting or event. It typically includes a call to order, review of meeting minutes, completion of business items, and the official adjournment. Here is an example of how an Adjournment Agenda can be formatted:</p>
+  <div class="agenda-block">
+      <h3>Adjournment Agenda</h3>
+  
+      <h4>Date: [Date of the Meeting]</h4>
+  
+      <h4>Meeting Start Time: [Start Time]</h4>
+  
+      <h4>Location: [Meeting Location]</h4>
+  
+      <h4>Call to Order</h4>
+  
+      <p>The meeting is called to order at [Start Time] by [Meeting Chair's Name], [Meeting Chair's Position].</p>
+  
+      <h4>Review of Meeting Minutes</h4>
+  
+      <p>The minutes from the previous meeting held on [Previous Meeting Date] are presented for review and approval.</p>
+  
+      <h4>Completion of Business Items</h4>
+  
+      <p>Complete any remaining business items on the agenda, such as:</p>
+  
+      <ul>
+          <li>[Business Item 1]</li>
+          <li>[Business Item 2]</li>
+          <li>[Business Item 3]</li>
+          <!-- Add more business items as needed -->
+      </ul>
+  
+      <h4>Official Adjournment</h4>
+  
+      <p>The meeting is officially adjourned at [End Time] by [Meeting Chair's Name], [Meeting Chair's Position].</p>
+  </div>
+  
+
+  <br><hr>
+  <h2 id="General-Discussion">General Discussion</h2>
+ 
+<p>A General Discussion Agenda is a document used to outline the order of business and topics for a meeting or event that focuses primarily on open and general discussions. It typically includes a call to order, review of previous meeting minutes, introduction of discussion topics, and the facilitation of open discussions. Here is an example of how a General Discussion Agenda can be formatted:</p>
+
+<div class="agenda-block">
+    <h3>General Discussion Agenda</h3>
+
+    <h4>Date: [Date of the Meeting]</h4>
+
+    <h4>Meeting Start Time: [Start Time]</h4>
+
+    <h4>Location: [Meeting Location]</h4>
+
+    <h4>Call to Order</h4>
+
+    <p>The meeting is called to order at [Start Time] by [Meeting Chair's Name], [Meeting Chair's Position].</p>
+
+    <h4>Review of Previous Meeting Minutes</h4>
+
+    <p>The minutes from the previous meeting held on [Previous Meeting Date] are presented for review and approval.</p>
+
+    <h4>Introduction of Discussion Topics</h4>
+
+    <p>The following discussion topics are introduced for open and general discussion:</p>
+
+    <ul>
+        <li>[Discussion Topic 1]</li>
+        <li>[Discussion Topic 2]</li>
+        <li>[Discussion Topic 3]</li>
+        <!-- Add more discussion topics as needed -->
+    </ul>
+
+    <h4>[Discussion Topic 1]</h4>
+
+    <p>Facilitate open discussions on [Discussion Topic 1] and encourage participants to share their thoughts, ideas, and perspectives.</p>
+
+    <h4>[Discussion Topic 2]</h4>
+
+    <p>Facilitate open discussions on [Discussion Topic 2] and encourage participants to share their thoughts, ideas, and perspectives.</p>
+
+    <h4>[Discussion Topic 3]</h4>
+
+    <p>Facilitate open discussions on [Discussion Topic 3] and encourage participants to share their thoughts, ideas, and perspectives.</p>
+
+    <h4>Wrap-up and Adjournment</h4>
+
+    <p>Summarize key points discussed, thank participants for their contributions, and officially adjourn the meeting at [End Time] by [Meeting Chair's Name], [Meeting Chair's Position].</p>
+</div>
+
+  <br><hr>
+  <h2 id="Open-Forum">Open Forum</h2>
+  <p>An Open Forum Agenda is a document used to outline the order of business and topics for a meeting or event that is dedicated to providing an open forum for participants to discuss and share their thoughts on various subjects. It typically includes a call to order, introduction of the open forum, time allocation for each participant, and the facilitation of discussions. Here is an example of how an Open Forum Agenda can be formatted:</p>
+  
+  <div class="agenda-block">
+      <h3>Open Forum Agenda</h3>
+  
+      <h4>Date: [Date of the Meeting]</h4>
+  
+      <h4>Meeting Start Time: [Start Time]</h4>
+  
+      <h4>Location: [Meeting Location]</h4>
+  
+      <h4>Call to Order</h4>
+  
+      <p>The meeting is called to order at [Start Time] by [Meeting Chair's Name], [Meeting Chair's Position].</p>
+  
+      <h4>Introduction of the Open Forum</h4>
+  
+      <p>The purpose of this meeting is to provide an open forum for participants to discuss and share their thoughts on various subjects. The following guidelines will be observed:</p>
+  
+      <ul>
+          <li>Each participant will be given [Time Allocation] to present their thoughts or ideas.</li>
+          <li>Participants should be respectful and considerate of others' opinions.</li>
+          <li>The facilitator will ensure a fair and inclusive discussion.</li>
+          <!-- Add more guidelines as needed -->
+      </ul>
+  
+      <h4>Participant 1: [Participant's Name]</h4>
+  
+      <p>[Participant's Name] will have [Time Allocation] to present their thoughts or ideas.</p>
+  
+      <h4>Participant 2: [Participant's Name]</h4>
+  
+      <p>[Participant's Name] will have [Time Allocation] to present their thoughts or ideas.</p>
+  
+      <!-- Add more participants as needed -->
+  
+      <h4>Open Discussion</h4>
+  
+      <p>Facilitate the open discussion among the participants. Encourage active participation, respectful dialogue, and the sharing of diverse perspectives.</p>
+  
+      <h4>Wrap-up and Adjournment</h4>
+  
+      <p>Summarize the key points discussed, thank participants for their contributions, and officially adjourn the meeting at [End Time] by [Meeting Chair's Name], [Meeting Chair's Position].</p>
+  </div>
+  
+
+  <br><hr>
+  <h2 id="Special-Presentations">Special Presentations</h2>
+   <p>A Special Presentations Agenda is a document used to outline the order of business and topics for a meeting or event that includes special presentations by invited speakers or experts. It typically includes a call to order, introduction of the special presentations, time allocation for each presentation, and the facilitation of discussions or Q&A sessions. Here is an example of how a Special Presentations Agenda can be formatted:</p>
+  
+  <div class="agenda-block">
+      <h3>Special Presentations Agenda</h3>
+  
+      <h4>Date: [Date of the Meeting]</h4>
+  
+      <h4>Meeting Start Time: [Start Time]</h4>
+  
+      <h4>Location: [Meeting Location]</h4>
+  
+      <h4>Call to Order</h4>
+  
+      <p>The meeting is called to order at [Start Time] by [Meeting Chair's Name], [Meeting Chair's Position].</p>
+  
+      <h4>Introduction of the Special Presentations</h4>
+  
+      <p>The following special presentations are scheduled for today's meeting:</p>
+  
+      <ol>
+          <li>
+              <h4>Presentation 1: [Presenter's Name]</h4>
+              <p>Time Allocation: [Time Allocation]</p>
+              <p>[Brief description or topic of Presentation 1]</p>
+          </li>
+          <li>
+              <h4>Presentation 2: [Presenter's Name]</h4>
+              <p>Time Allocation: [Time Allocation]</p>
+              <p>[Brief description or topic of Presentation 2]</p>
+          </li>
+          <!-- Add more presentations as needed -->
+      </ol>
+  
+      <h4>Presentation 1: [Presenter's Name]</h4>
+  
+      <p>[Presenter's Name] will deliver a presentation on [Brief description or topic of Presentation 1]. The allocated time for the presentation is [Time Allocation].</p>
+  
+      <p>Following the presentation, there will be a facilitated discussion or a Q&A session for participants to engage with the presenter.</p>
+  
+      <h4>Presentation 2: [Presenter's Name]</h4>
+  
+      <p>[Presenter's Name] will deliver a presentation on [Brief description or topic of Presentation 2]. The allocated time for the presentation is [Time Allocation].</p>
+  
+      <p>Following the presentation, there will be a facilitated discussion or a Q&A session for participants to engage with the presenter.</p>
+  
+      <h4>Wrap-up and Adjournment</h4>
+  
+      <p>Summarize key points discussed, thank presenters for their contributions, and officially adjourn the meeting at [End Time] by [Meeting Chair's Name], [Meeting Chair's Position].</p>
+  </div>
+  
+
+  <br><hr>
+  <h2 id="Group-Activities">Group Activities</h2>
+  <p>A Group Activities Agenda is a document used to outline the order of activities and schedule for a group event or meeting. It typically includes a welcome message, overview of the activities, time allocation for each activity, and any necessary instructions or guidelines. Here is an example of how a Group Activities Agenda can be formatted:</p>
+  
+  <div class="agenda-block">
+      <h3>Group Activities Agenda</h3>
+  
+      <h4>Date: [Date of the Event]</h4>
+  
+      <h4>Event Start Time: [Start Time]</h4>
+  
+      <h4>Location: [Event Location]</h4>
+  
+      <h4>Welcome and Introduction</h4>
+  
+      <p>Welcome participants to the group activities event and provide a brief introduction to the agenda and purpose of the activities.</p>
+  
+      <h4>Activity 1: [Activity Name]</h4>
+  
+      <p>Time: [Duration]</p>
+  
+      <p>[Brief description or instructions for Activity 1]</p>
+  
+      <h4>Activity 2: [Activity Name]</h4>
+  
+      <p>Time: [Duration]</p>
+  
+      <p>[Brief description or instructions for Activity 2]</p>
+  
+      <!-- Add more activities as needed -->
+  
+      <h4>Wrap-up and Conclusion</h4>
+  
+      <p>Conclude the group activities event by thanking participants for their engagement and participation. Provide any necessary closing remarks or next steps.</p>
+  </div>
+  
+  <br><hr>
+  <h2 id="Wrap-Up">Wrap-Up</h2>
+ <p>A Wrap-up Agenda is a document used to outline the order of activities and discussions during a wrap-up session or meeting. It typically includes a summary of the event or project, key takeaways, action items, and any necessary next steps or follow-up actions. Here is an example of how a Wrap-up Agenda can be formatted:</p>
+  
+  <div class="agenda-block">
+      <h3>Wrap-up Agenda</h3>
+  
+      <h4>Date: [Date of the Meeting]</h4>
+  
+      <h4>Meeting Start Time: [Start Time]</h4>
+  
+      <h4>Location: [Meeting Location]</h4>
+  
+      <h4>Welcome and Introduction</h4>
+  
+      <p>Welcome participants to the wrap-up session and provide a brief introduction to the agenda and purpose of the meeting.</p>
+  
+      <h4>Summary of Event/Project</h4>
+  
+      <p>Provide a brief summary of the event or project that is being wrapped up, highlighting key accomplishments, challenges, and outcomes.</p>
+  
+      <h4>Key Takeaways</h4>
+  
+      <ul>
+          <li>[Key takeaway 1]</li>
+          <li>[Key takeaway 2]</li>
+          <li>[Key takeaway 3]</li>
+          <!-- Add more key takeaways as needed -->
+      </ul>
+  
+      <h4>Action Items</h4>
+  
+      <ul>
+          <li>[Action item 1]</li>
+          <li>[Action item 2]</li>
+          <li>[Action item 3]</li>
+          <!-- Add more action items as needed -->
+      </ul>
+  
+      <h4>Next Steps and Follow-up</h4>
+  
+      <p>Outline the next steps or follow-up actions that need to be taken after the wrap-up session. Include any deadlines, responsibilities, or necessary communication channels.</p>
+  
+      <h4>Open Discussion</h4>
+  
+      <p>Allow for an open discussion to gather any additional feedback, insights, or questions from participants regarding the event or project.</p>
+  
+      <h4>Wrap-up and Conclusion</h4>
+  
+      <p>Conclude the wrap-up session by summarizing the key points discussed, expressing appreciation to the participants, and officially closing the meeting at [End Time] by [Meeting Facilitator's Name].</p>
+  </div><br><hr>
+  
+<h2 id="Welcome-and-Introductions">Welcome and Introductions</h2>
+<div class="agenda-block">
+    <h4>Welcome and Introductions</h4>
+
+<p>Welcome everyone to the [Event Name]! We are thrilled to have you all here today. This is a great opportunity to come together and [purpose of the event]. Before we begin, let's take a moment to introduce ourselves.</p>
+
+<p>Please state your name, your role or affiliation, and share a brief background or something interesting about yourself. We encourage everyone to participate and get to know each other.</p>
+
+<!-- You can customize the content of the introductions section as per your needs -->
+
+<p>Let's start with [Name/Organization] to introduce themselves.</p>
+
+<!-- Repeat the above line for each participant, or use a different format if desired -->
+
+<p>Thank you all for introducing yourselves. We now have a better understanding of the diverse perspectives and experiences present in this gathering. Let's move forward with our agenda and dive into our discussions.</p>
+
+</div><br><hr>
+
+<h2 id="Overview-of-Workshop-Goals">Overview-of-Workshop-Goals</h2>
+<div class="agenda-block">
+    <h4>Overview of Workshop Goals</h4>
+
+<p>Before we dive into the workshop activities, let's take a moment to review the goals and objectives of this workshop. The main purpose of this workshop is to:</p>
+
+<ul>
+  <li>Goal 1: [Description of goal 1]</li>
+  <li>Goal 2: [Description of goal 2]</li>
+  <li>Goal 3: [Description of goal 3]</li>
+  <!-- Add more goals as needed -->
+</ul>
+
+<p>By the end of this workshop, we aim to:</p>
+
+<ol>
+  <li>[Outcome 1]</li>
+  <li>[Outcome 2]</li>
+  <li>[Outcome 3]</li>
+  <!-- Add more outcomes as needed -->
+</ol>
+
+<p>Throughout the workshop, we will engage in various activities, discussions, and exercises to help us achieve these goals. It is important to actively participate, share your insights, and collaborate with fellow participants.</p>
+
+<p>Now that we have a clear understanding of the goals and objectives, let's proceed with the first activity of the workshop.</p>
+
+</div><br><hr>
+
+<h2 id="Presentations-and-Discussions">Presentations and Discussions</h2>
+<div class="agenda-block">
+    <h4>Presentations and Discussions</h4>
+
+<p>In this section of our agenda, we will have presentations and discussions on various topics related to [theme or subject]. Each presentation will be followed by a Q&A session and open discussions. The allocated time for this section is [duration].</p>
+
+<ol>
+  <li>
+    <h5>Presentation 1: [Title]</h5>
+    <p>Presenter: [Presenter's Name]</p>
+    <p>Time: [Presentation Time]</p>
+    <p>Description: [Brief description of the presentation]</p>
+    <p>Q&A and Discussion: [Duration for Q&A and discussion]</p>
+  </li>
+
+  <li>
+    <h5>Presentation 2: [Title]</h5>
+    <p>Presenter: [Presenter's Name]</p>
+    <p>Time: [Presentation Time]</p>
+    <p>Description: [Brief description of the presentation]</p>
+    <p>Q&A and Discussion: [Duration for Q&A and discussion]</p>
+  </li>
+
+  <!-- Add more presentations as needed -->
+
+</ol>
+
+<p>Please make sure to actively participate, ask questions, and engage in meaningful discussions. We encourage you to share your insights, experiences, and any relevant examples related to the presentations.</p>
+
+<p>After the presentations and discussions, we will take a short break to refresh and then proceed to the next section of our agenda.</p>
+</div><br><hr>
+
+<h2 id="Breakout-Sessions">Breakout Sessions</h2>
+<div class="agenda-block">
+    <h4>Breakout Sessions</h4>
+
+<p>In this section of our agenda, we will have breakout sessions where participants will engage in smaller group discussions and activities related to specific topics. The purpose of these breakout sessions is to encourage collaboration, knowledge sharing, and in-depth exploration of the subject matter. The allocated time for this section is [duration].</p>
+
+<ol>
+  <li>
+    <h5>Breakout Session 1: [Topic]</h5>
+    <p>Facilitator: [Facilitator's Name]</p>
+    <p>Time: [Session Time]</p>
+    <p>Description: [Brief description of the breakout session]</p>
+  </li>
+
+  <li>
+    <h5>Breakout Session 2: [Topic]</h5>
+    <p>Facilitator: [Facilitator's Name]</p>
+    <p>Time: [Session Time]</p>
+    <p>Description: [Brief description of the breakout session]</p>
+  </li>
+
+  <!-- Add more breakout sessions as needed -->
+
+</ol>
+
+<p>Each breakout session will have a designated facilitator to guide the discussions and activities. Please make sure to actively participate, contribute your ideas, and collaborate with your group members. Take this opportunity to share your expertise and learn from others.</p>
+
+<p>After the breakout sessions, we will reconvene as a whole group for a recap and closing remarks.</p>
+</div>
+
+<h2 id="#Summary-and-Next-Steps">Summary and Next Steps</h2>
+<div class="agenda-block">
+    <h4>Breakout Sessions</h4>
+
+<p>In this section of our agenda, we will have breakout sessions where participants will engage in smaller group discussions and activities related to specific topics. The purpose of these breakout sessions is to encourage collaboration, knowledge sharing, and in-depth exploration of the subject matter. The allocated time for this section is [duration].</p>
+
+<ol>
+  <li>
+    <h5>Breakout Session 1: [Topic]</h5>
+    <p>Facilitator: [Facilitator's Name]</p>
+    <p>Time: [Session Time]</p>
+    <p>Description: [Brief description of the breakout session]</p>
+  </li>
+
+  <li>
+    <h5>Breakout Session 2: [Topic]</h5>
+    <p>Facilitator: [Facilitator's Name]</p>
+    <p>Time: [Session Time]</p>
+    <p>Description: [Brief description of the breakout session]</p>
+  </li>
+
+  <!-- Add more breakout sessions as needed -->
+
+</ol>
+
+<p>Each breakout session will have a designated facilitator to guide the discussions and activities. Please make sure to actively participate, contribute your ideas, and collaborate with your group members. Take this opportunity to share your expertise and learn from others.</p>
+
+<p>After the breakout sessions, we will reconvene as a whole group for a recap and closing remarks.</p>
+</div>
+
+<script>
     function goBack() {
-      window.history.back();
+        window.history.back();
     }
-  </script>
+</script>
+
+<style>
+#scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 9999;
+}
+</style>
+
+
+<!-- Content goes here -->
+
+<div id="scroll-to-top">&#x2191;</div>
+
+<script>
+window.onscroll = function() { scrollFunction() };
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("scroll-to-top").style.display = "block";
+  } else {
+    document.getElementById("scroll-to-top").style.display = "none";
+  }
+}
+
+document.getElementById("scroll-to-top").onclick = function() {
+  scrollToTop(500); // Scroll to top with animation (500ms duration)
+};
+
+function scrollToTop(scrollDuration) {
+  var scrollStep = -window.scrollY / (scrollDuration / 15);
+  var scrollInterval = setInterval(function() {
+    if (window.scrollY !== 0) {
+      window.scrollBy(0, scrollStep);
+    } else {
+      clearInterval(scrollInterval);
+    }
+  }, 15);
+}
+</script>
+
 </body>
 </html>
