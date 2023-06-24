@@ -1,90 +1,604 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-  <title>Types of Notices</title>
+  <title>Notices</title>
+  <link rel="shortcut icon" href="title_logo.png" type="image/x-icon" />
+   
   <style>
     body {
-      background-color: #222;
-      color: #fff;
-      font-family: Arial, sans-serif;
+        background-color: #1f1f1f;
+        color: #e0e0e0;
+        font-family: Arial, sans-serif;
     }
-
+   
     h1 {
-      color: #fff;
+        color: #ffffff;
+    }
+    b {
+        padding-left: 5%;
+    }
+    a {
+        color: rgb(66, 146, 93);
     }
 
-    h2 {
-      color: #ccc;
-    }
-    ol {
-      list-style-type: upper-alpha;
-      color: #ccc;
-      margin:10px;
-      padding-left: 20px;
-    }
-    ol ol {
-      list-style-type: decimal;
-     margin: 10px;
-      color: #999;
-      padding-left: 20px;
-    }
     li {
-      margin: 10px 0;
+        margin-bottom: 0.5em;
+    }
+    .report-type {
+        font-weight: bold;
+    }
+
+    .sub-types {
+        margin-left: 1.5em;
     }
 
     .back-button {
-      margin-bottom: 10px;
-      background-color: #555;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
+        margin-bottom: 10px;
+        background-color: #555;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
     }
-    
+
     .back-button:hover {
-      background-color: #333;
+        background-color: #333;
+    }
+    h2 {
+        padding: 5%;
+    }
+
+    .p,
+    p {
+        padding-left: 8%;
+        margin-bottom: 1.5em;
+    }
+
+    .notice-block {
+        margin-top: 80px;
+        text-align: left;
+        overflow-y: auto;
+        max-height: 550px;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px;
+        background-color: #333333;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        position: relative;
+    }
+
+    pre {
+        font-family: Consolas, monospace; /* Specify the font family */
+        font-size: 14px; /* Specify the font size */
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #fff;
+    }
+
+    th {
+        background-color: #333;
+    }
+
+    tr:nth-child(even) {
+        background-color: #444;
+    }
+    hr {
+      border: 2px solid #88ca9054;
+      border-radius: 5px;
+       margin: 5%;
     }
   </style>
 </head>
 <body>
-    <button class="back-button" onclick="goBack()">Back</button>
+  <button class="back-button" onclick="goBack()">Back</button>
   <h1>Notice : </h1>
-  <p>A notice is a formal communication that provides important information or instructions to a specific group or the public.
-     It serves to inform, educate, or alert recipients about specific matters or changes.</p>
+  <p>A notice is a formal communication that provides important information or instructions to a specific group or the public. It serves to inform, educate, or alert recipients about specific matters or changes.</p>
   <h1>Types of Notices</h1>
   <ol>
     <li>
       Public Notice
       <ol>
-        <li>Public Hearing Notice</li>
-        <li>Environmental Notice</li>
-        <li>Public Auction Notice</li>
+        <li><a href="#Public-Hearing-Notice">Public Hearing Notice</a></li>
+        <li><a href="#Environmental-Notice">Environmental Notice</a></li>
+        <li><a href="#Public-Auction-Notice">Public Auction Notice</a></li>
       </ol>
     </li>
     <li>
       Legal Notice
       <ol>
-        <li>Notice of Lawsuit</li>
-        <li>Notice of Default</li>
-        <li>Notice of Intent to Sue</li>
+        <li><a href="#Notice-of-Lawsuit">Notice of Lawsuit</a></li>
+        <li><a href="#Notice-of-Default">Notice of Default</a></li>
+        <li><a href="#Notice-of-Intent-to-Sue">Notice of Intent to Sue</a></li>
       </ol>
     </li>
     <li>
       Notice of Eviction
       <ol>
-        <li>Pay or Quit Notice</li>
-        <li>Cure or Quit Notice</li>
-        <li>Unconditional Quit Notice</li>
+        <li><a href="#Pay-or-Quit-Notice">Pay or Quit Notice</a></li>
+        <li><a href="#Cure-or-Quit-Notice">Cure or Quit Notice</a></li>
+        <li><a href="#Unconditional-Quit-Notice">Unconditional Quit Notice</a></li>
       </ol>
     </li>
     <!-- Add more items for other types of notices -->
   </ol>
+  <br><hr style="
+  border: 5px solid #88ca9054;border-radius: 5px; margin: 0%;">
+
+  <h2 id="Public-Hearing-Notice">Public Hearing Notice</h2>
+<p>A Public Hearing Notice is an official announcement informing the public about an upcoming hearing or meeting where individuals can provide input, express opinions, or raise concerns on a specific matter of public interest. Here is an example of how a Public Hearing Notice can be formatted:</p>
+  <div class="notice-block">
+      <h3>Public Hearing Notice</h3>
+  
+      <h4>Date: [Date of the Notice]</h4>
+  
+      <h4>Subject: [Subject of the Hearing]</h4>
+  
+      <h4>Notice of Public Hearing</h4>
+  
+      <p>Dear Residents and Stakeholders,</p>
+  
+      <p>This notice is to inform you of an upcoming public hearing on [Date] regarding [Subject of the Hearing]. The purpose of this hearing is to provide an opportunity for the public to express their views, provide feedback, and ask questions related to the matter at hand.</p>
+  
+      <h4>Meeting Details:</h4>
+      <ul>
+          <li><strong>Date:</strong> [Date of the Hearing]</li>
+          <li><strong>Time:</strong> [Time of the Hearing]</li>
+          <li><strong>Location:</strong> [Physical or Virtual Location]</li>
+          <!-- Add more meeting details as needed -->
+      </ul>
+  
+      <h4>Agenda:</h4>
+      <p>The agenda for the public hearing will include:</p>
+      <ul>
+          <li>[Agenda Item 1]</li>
+          <li>[Agenda Item 2]</li>
+          <li>[Agenda Item 3]</li>
+          <!-- Add more agenda items as needed -->
+      </ul>
+  
+      <p>All interested parties are encouraged to attend the public hearing and share their views on the matter. Your input is valuable in helping us make informed decisions that reflect the interests and concerns of the community.</p>
+  
+      <p>If you are unable to attend the hearing in person, written submissions or comments can be sent to [Contact Person/Department] by [Submission Deadline].</p>
+  
+      <p>For any questions or additional information, please contact [Contact Person/Department] at [Contact Information].</p>
+  
+      <p>Thank you for your participation and engagement in this important public process.</p>
+  
+      <p>Sincerely,</p>
+  
+      <p>[Your Name]</p>
+      <p>[Your Position]</p>
+  </div><br><hr>
+  
+  <h2 id="Environmental-Notice">Environmental Notice</h2>
+  <p>An Environmental Notice is an official communication issued to inform the public about environmental matters, such as project proposals, assessments, or actions that may impact the environment. Here is an example of how an Environmental Notice can be formatted:</p>
+ <div class="notice-block">
+      <h3>Environmental Notice</h3>
+  
+      <h4>Date: [Date of the Notice]</h4>
+  
+      <h4>Subject: [Subject of the Notice]</h4>
+  
+      <h4>Notice of Environmental Impact</h4>
+  
+      <p>Dear Residents and Stakeholders,</p>
+  
+      <p>This notice serves as an update regarding an ongoing environmental project or proposed action related to [Subject of the Notice]. The purpose of this notice is to inform you about the potential environmental impacts, mitigation measures, and opportunities for public input.</p>
+  
+      <h4>Project/Action Details:</h4>
+      <ul>
+          <li><strong>Project/Action Name:</strong> [Name of the Project/Action]</li>
+          <li><strong>Project/Action Description:</strong> [Brief description of the Project/Action]</li>
+          <li><strong>Location:</strong> [Physical or Geographic Location]</li>
+          <!-- Add more project/action details as needed -->
+      </ul>
+  
+      <h4>Environmental Impact Assessment:</h4>
+      <p>An Environmental Impact Assessment (EIA) has been conducted to evaluate the potential environmental effects of the project/action. The assessment includes considerations such as:</p>
+      <ul>
+          <li>[Environmental Impact 1]</li>
+          <li>[Environmental Impact 2]</li>
+          <li>[Environmental Impact 3]</li>
+          <!-- Add more environmental impacts as needed -->
+      </ul>
+  
+      <h4>Public Input and Consultation:</h4>
+      <p>We value your input and encourage you to provide comments, concerns, or suggestions regarding the project/action and its potential environmental impacts. There will be opportunities for public consultation and engagement, including:</p>
+      <ul>
+          <li>[Public Consultation Event 1]</li>
+          <li>[Public Consultation Event 2]</li>
+          <li>[Public Consultation Event 3]</li>
+          <!-- Add more public consultation events as needed -->
+      </ul>
+  
+      <p>If you are unable to attend the public consultation events, written submissions or comments can be sent to [Contact Person/Department] by [Submission Deadline].</p>
+  
+      <p>For any questions or additional information, please contact [Contact Person/Department] at [Contact Information].</p>
+  
+      <p>Thank you for your attention to this environmental notice, and we appreciate your involvement in the process of environmental decision-making.</p>
+  
+      <p>Sincerely,</p>
+  
+      <p>[Your Name]</p>
+      <p>[Your Position]</p>
+  </div><br><hr>
+  
+  <h2 id="Public-Auction-Notice">Public Auction Notice</h2>
+  <p>A Public Auction Notice is an official announcement regarding the sale of goods, properties, or assets through a public auction. It provides details about the auction event, including the items up for auction, terms and conditions, and relevant information for interested bidders. Here is an example of how a Public Auction Notice can be formatted:</p>
+  <div class="notice-block">
+      <h3>Public Auction Notice</h3>
+  
+      <h4>Date: [Date of the Notice]</h4>
+  
+      <h4>Subject: [Subject of the Auction]</h4>
+  
+      <h4>Notice of Public Auction</h4>
+  
+      <p>Dear Bidders and Interested Parties,</p>
+  
+      <p>This notice serves as an invitation to participate in a public auction of various goods, properties, or assets. The auction presents an opportunity to bid and acquire these items under the terms and conditions outlined below:</p>
+  
+      <h4>Auction Details:</h4>
+      <ul>
+          <li><strong>Date:</strong> [Date of the Auction]</li>
+          <li><strong>Time:</strong> [Time of the Auction]</li>
+          <li><strong>Location:</strong> [Physical or Virtual Location]</li>
+          <!-- Add more auction details as needed -->
+      </ul>
+  
+      <h4>Items for Auction:</h4>
+      <p>The auction will include the following items:</p>
+      <ul>
+          <li>[Item 1]</li>
+          <li>[Item 2]</li>
+          <li>[Item 3]</li>
+          <!-- Add more auction items as needed -->
+      </ul>
+  
+      <h4>Terms and Conditions:</h4>
+      <p>Interested bidders are expected to review and adhere to the following terms and conditions:</p>
+      <ul>
+          <li>[Term or Condition 1]</li>
+          <li>[Term or Condition 2]</li>
+          <li>[Term or Condition 3]</li>
+          <!-- Add more terms and conditions as needed -->
+      </ul>
+  
+      <p>Additional information, including any specific requirements or instructions for participation, can be obtained by contacting [Contact Person/Department] at [Contact Information].</p>
+  
+      <p>We encourage all interested parties to attend the auction and participate in the bidding process. Please note that registration or pre-qualification may be necessary to take part in the auction.</p>
+  
+      <p>Thank you for your interest, and we look forward to your participation in this public auction.</p>
+  
+      <p>Sincerely,</p>
+  
+      <p>[Your Name]</p>
+      <p>[Your Position]</p>
+  </div><br><hr>
+  
+  <h2 id="Notice-of-Lawsuit">Notice of Lawsuit</h2>
+  <p>A Notice of Lawsuit is an official communication informing individuals or entities about a legal action that has been filed against them. It serves as a formal notification and provides essential details regarding the lawsuit. Here is an example of how a Notice of Lawsuit can be formatted:</p>
+  <div class="notice-block">
+      <h3>Notice of Lawsuit</h3>
+  
+      <h4>Date: [Date of the Notice]</h4>
+  
+      <h4>Subject: [Subject of the Lawsuit]</h4>
+  
+      <h4>Notice to Defendants</h4>
+  
+      <p>Dear [Defendant's Name] and Legal Representative,</p>
+  
+      <p>This notice serves as an official communication to inform you that a lawsuit has been filed against you in the [Court Name] under the case number [Case Number]. The purpose of this notice is to ensure that you are aware of the legal action and the claims made against you.</p>
+  
+      <h4>Lawsuit Details:</h4>
+      <ul>
+          <li><strong>Plaintiff:</strong> [Plaintiff's Name]</li>
+          <li><strong>Defendant:</strong> [Defendant's Name]</li>
+          <li><strong>Court:</strong> [Court Name]</li>
+          <li><strong>Case Number:</strong> [Case Number]</li>
+          <li><strong>Date Filed:</strong> [Date Filed]</li>
+          <!-- Add more lawsuit details as needed -->
+      </ul>
+  
+      <h4>Claims:</h4>
+      <p>The lawsuit alleges the following claims against you:</p>
+      <ul>
+          <li>[Claim 1]</li>
+          <li>[Claim 2]</li>
+          <li>[Claim 3]</li>
+          <!-- Add more claims as needed -->
+      </ul>
+  
+      <h4>Legal Representation:</h4>
+      <p>If you have legal representation, please notify your attorney of this lawsuit immediately. It is essential that you respond to the lawsuit within the specified timeframe as required by the court. Failure to respond may result in a default judgment against you.</p>
+  
+      <h4>Contact Information:</h4>
+      <p>If you have any questions or require further information, please contact [Plaintiff's Attorney] at [Contact Information].</p>
+  
+      <p>It is crucial that you take this notice seriously and promptly respond to the lawsuit in accordance with the legal procedures. Ignoring or failing to respond to the lawsuit may have significant legal consequences.</p>
+  
+      <p>Sincerely,</p>
+  
+      <p>[Your Name]</p>
+      <p>[Your Position]</p>
+  </div><br><hr>
+  
+  <h2 id="Notice-of-Default">Notice of Default</h2>
+  <p>A Notice of Default is an official communication sent to notify individuals or entities about a default or breach of contractual obligations. It serves as a formal notice of the default and outlines the consequences and potential actions that may be taken. Here is an example of how a Notice of Default can be formatted:</p>
+  <div class="notice-block">
+      <h3>Notice of Default</h3>
+  
+      <h4>Date: [Date of the Notice]</h4>
+  
+      <h4>Subject: [Subject of the Default]</h4>
+  
+      <h4>Notice to Defaulting Party</h4>
+  
+      <p>Dear [Defaulting Party's Name],</p>
+  
+      <p>This notice serves as an official communication to inform you that you are in default of your contractual obligations under the agreement [Agreement Name] executed on [Date of Agreement]. The purpose of this notice is to provide formal notice of the default and to outline the consequences and potential actions that may be taken as a result.</p>
+  
+      <h4>Default Details:</h4>
+      <ul>
+          <li><strong>Agreement:</strong> [Agreement Name]</li>
+          <li><strong>Defaulted Party:</strong> [Defaulting Party's Name]</li>
+          <li><strong>Date of Agreement:</strong> [Date of Agreement]</li>
+          <li><strong>Date of Default:</strong> [Date of Default]</li>
+          <!-- Add more default details as needed -->
+      </ul>
+  
+      <h4>Consequences of Default:</h4>
+      <p>As a result of the default, the following consequences may apply:</p>
+      <ul>
+          <li>[Consequence 1]</li>
+          <li>[Consequence 2]</li>
+          <li>[Consequence 3]</li>
+          <!-- Add more consequences as needed -->
+      </ul>
+  
+      <h4>Rectification Period:</h4>
+      <p>You are hereby provided with a rectification period of [Rectification Period] from the date of this notice to cure the default and comply with the terms of the agreement. Failure to rectify the default within the specified period may result in further actions, including but not limited to [Potential Actions].</p>
+  
+      <h4>Contact Information:</h4>
+      <p>If you have any questions or require further information, please contact [Notifying Party/Authorized Representative] at [Contact Information].</p>
+  
+      <p>It is essential that you take this notice seriously and take immediate action to rectify the default within the specified rectification period. Failure to do so may lead to further consequences as outlined in the agreement.</p>
+  
+      <p>Sincerely,</p>
+  
+      <p>[Your Name]</p>
+      <p>[Your Position]</p>
+  </div><br><hr>
+  
+
+<h2 id="Notice-of-Intent-to-Sue">Notice of Intent to Sue</h2>
+<p>A Notice of Intent to Sue is a formal communication sent to notify individuals or entities of the sender's intention to file a lawsuit. It serves as a preliminary step before initiating legal action and outlines the basis for the intended lawsuit. Here is an example of how a Notice of Intent to Sue can be formatted:</p>
+<div class="notice-block">
+    <h3>Notice of Intent to Sue</h3>
+
+    <h4>Date: [Date of the Notice]</h4>
+
+    <h4>Subject: [Subject of the Intended Lawsuit]</h4>
+
+    <h4>Notice to Potential Defendant</h4>
+
+    <p>Dear [Potential Defendant's Name],</p>
+
+    <p>This notice serves as an official communication to inform you of my intent to file a lawsuit against you regarding the matter of [Subject of the Intended Lawsuit]. The purpose of this notice is to provide you with an opportunity to address the issue before legal action is initiated.</p>
+
+    <h4>Lawsuit Basis:</h4>
+    <p>The intended lawsuit is based on the following grounds:</p>
+    <ul>
+        <li>[Ground 1]</li>
+        <li>[Ground 2]</li>
+        <li>[Ground 3]</li>
+        <!-- Add more grounds as needed -->
+    </ul>
+
+    <h4>Resolution:</h4>
+    <p>I strongly encourage you to take immediate steps to address and resolve the issue in order to avoid litigation. This may include [Possible Resolutions]. Failure to resolve the matter within a reasonable timeframe may result in the filing of a formal lawsuit.</p>
+
+    <h4>Contact Information:</h4>
+    <p>If you wish to discuss this matter further or propose a resolution, please contact me at [Your Contact Information] within [Response Period]. I am open to exploring alternative dispute resolution methods in an effort to avoid the need for litigation.</p>
+
+    <p>Please be advised that this notice is not intended as legal advice and does not substitute the need for independent legal representation. It is recommended that you seek legal counsel to understand your rights and options.</p>
+
+    <p>Sincerely,</p>
+
+    <p>[Your Name]</p>
+    <p>[Your Position]</p>
+</div><br><hr>
+
+  <h2 id="Pay-or-Quit-Notice">Pay or Quit Notice</h2>
+<p>A Pay or Quit Notice, also known as a Demand for Rent or Possession, is a formal communication sent to a tenant who is in default of their rental payment obligations. It notifies the tenant of the overdue rent and provides a specified timeframe within which they must pay the outstanding amount or vacate the premises. Here is an example of how a Pay or Quit Notice can be formatted:</p>
+<div class="notice-block">
+    <h3>Pay or Quit Notice</h3>
+
+    <h4>Date: [Date of the Notice]</h4>
+
+    <h4>Subject: [Subject of the Notice]</h4>
+
+    <h4>Tenant Notice</h4>
+
+    <p>Dear [Tenant's Name],</p>
+
+    <p>This notice serves as an official communication to inform you that you are in default of your rental payment obligations for the premises located at [Property Address]. As of the date of this notice, the outstanding rent amount is $[Amount Due]. The purpose of this notice is to demand immediate payment of the overdue rent or require you to vacate the premises within a specified timeframe.</p>
+
+    <h4>Payment Details:</h4>
+    <p>The following are the details of the overdue rent:</p>
+    <ul>
+        <li><strong>Property Address:</strong> [Property Address]</li>
+        <li><strong>Amount Due:</strong> $[Amount Due]</li>
+        <li><strong>Due Date:</strong> [Due Date]</li>
+        <li><strong>Payment Method:</strong> [Accepted Payment Methods]</li>
+        <!-- Add more payment details as needed -->
+    </ul>
+
+    <h4>Pay or Quit Notice:</h4>
+    <p>You are hereby given a period of [Notice Period] from the date of this notice to either pay the outstanding rent in full or vacate the premises. If you choose to pay the rent, it must be received by [Payment Deadline]. Failure to comply with this notice within the specified timeframe may result in legal action to recover possession of the premises and pursue any applicable remedies for non-payment of rent.</p>
+
+    <h4>Contact Information:</h4>
+    <p>If you have any questions or wish to discuss payment arrangements, please contact [Landlord/Property Manager] at [Contact Information] immediately. It is crucial that you address this matter promptly to avoid any further consequences.</p>
+
+    <p>Please be aware that this notice is being sent in accordance with the laws and regulations governing landlord-tenant relationships. Failure to comply with the terms of this notice may result in legal action, including eviction proceedings, which could have serious consequences for your tenancy and credit history.</p>
+
+    <p>Sincerely,</p>
+
+    <p>[Your Name]</p>
+    <p>[Your Position]</p>
+</div><br><hr>
+
+  <h2 id="Cure-or-Quit-Notice">Cure or Quit Notice</h2>
+  
+<p>A Cure or Quit Notice, also known as a Notice to Cure or Quit, is a formal communication sent to a tenant who has violated the terms of their lease agreement or rental contract. It notifies the tenant of the specific violation and provides a specified timeframe within which they must correct the violation or vacate the premises. Here is an example of how a Cure or Quit Notice can be formatted:</p>
+  <div class="notice-block">
+      <h3>Cure or Quit Notice</h3>
+  
+      <h4>Date: [Date of the Notice]</h4>
+  
+      <h4>Subject: [Subject of the Notice]</h4>
+  
+      <h4>Tenant Notice</h4>
+  
+      <p>Dear [Tenant's Name],</p>
+  
+      <p>This notice serves as an official communication to inform you that you are in violation of the terms of your lease agreement or rental contract for the premises located at [Property Address]. Specifically, you have violated the following provision(s): [Violations]. The purpose of this notice is to demand that you remedy the violation(s) or vacate the premises within a specified timeframe.</p>
+  
+      <h4>Violation Details:</h4>
+      <p>The following are the details of the violation(s) and the required remedy:</p>
+      <ul>
+          <li><strong>Property Address:</strong> [Property Address]</li>
+          <li><strong>Violation(s):</strong> [Violations]</li>
+          <li><strong>Required Remedy:</strong> [Remedy]</li>
+          <li><strong>Notice Period:</strong> [Notice Period]</li>
+          <!-- Add more violation details as needed -->
+      </ul>
+  
+      <h4>Cure or Quit Notice:</h4>
+      <p>You are hereby given a period of [Notice Period] from the date of this notice to either cure the violation(s) or vacate the premises. If you choose to cure the violation(s), it must be fully remedied by [Cure Deadline]. Failure to comply with this notice within the specified timeframe may result in legal action to recover possession of the premises and pursue any applicable remedies for the breach of the lease agreement or rental contract.</p>
+  
+      <h4>Contact Information:</h4>
+      <p>If you have any questions or require clarification on the violation(s) or the remedy, please contact [Landlord/Property Manager] at [Contact Information] immediately. It is crucial that you address this matter promptly to avoid any further consequences.</p>
+  
+      <p>Please be aware that this notice is being sent in accordance with the laws and regulations governing landlord-tenant relationships. Failure to comply with the terms of this notice may result in legal action, including eviction proceedings, which could have serious consequences for your tenancy and credit history.</p>
+  
+      <p>Sincerely,</p>
+  
+      <p>[Your Name]</p>
+      <p>[Your Position]</p>
+  </div><br><hr>
+
+ 
+  <h2 id="Unconditional-Quit-Notice">Unconditional Quit Notice</h2>
+<p>An Unconditional Quit Notice, also known as a Notice to Quit or Vacate, is a formal communication sent to a tenant demanding that they vacate the premises without the option to cure any violations or pay any outstanding amounts. It is typically issued when the tenant has committed serious lease violations or failed to comply with previous notices. Here is an example of how an Unconditional Quit Notice can be formatted:</p>
+<div class="notice-block">
+    <h3>Unconditional Quit Notice</h3>
+
+    <h4>Date: [Date of the Notice]</h4>
+
+    <h4>Subject: [Subject of the Notice]</h4>
+
+    <h4>Tenant Notice</h4>
+
+    <p>Dear [Tenant's Name],</p>
+
+    <p>This notice serves as an official communication to inform you that you are in violation of the terms of your lease agreement or rental contract for the premises located at [Property Address]. The violations committed are of a serious nature and are not subject to cure or remedy. Therefore, you are hereby demanded to vacate the premises immediately and surrender possession.</p>
+
+    <h4>Violation Details:</h4>
+    <p>The following are the details of the violations:</p>
+    <ul>
+        <li><strong>Property Address:</strong> [Property Address]</li>
+        <li><strong>Violations:</strong> [Violations]</li>
+        <!-- Add more violation details as needed -->
+    </ul>
+
+    <h4>Unconditional Quit Notice:</h4>
+    <p>This notice is an unconditional demand for you to quit and vacate the premises immediately. You are required to remove all personal belongings and return the keys to the landlord or property manager by [Move-Out Date]. Failure to comply with this notice may result in legal action to regain possession of the premises and pursue any applicable remedies for the breach of the lease agreement or rental contract.</p>
+
+    <h4>Contact Information:</h4>
+    <p>If you have any questions or require clarification, please contact [Landlord/Property Manager] at [Contact Information] immediately. It is crucial that you address this matter promptly to avoid any further consequences.</p>
+
+    <p>Please be aware that this notice is being sent in accordance with the laws and regulations governing landlord-tenant relationships. Failure to comply with the terms of this notice may result in legal action, including eviction proceedings, which could have serious consequences for your tenancy and credit history.</p>
+
+    <p>Sincerely,</p>
+
+    <p>[Your Name]</p>
+    <p>[Your Position]</p>
+</div><br><br>
+
+
+ 
   <script>
-     function goBack() {
-      window.history.back();
+    function goBack() {
+        window.history.back();
     }
-  </script>
+</script>
+
+
+
+
+
+<style>
+#scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 9999;
+}
+</style>
+
+
+<!-- Content goes here -->
+
+<div id="scroll-to-top">&#x2191;</div>
+
+<script>
+window.onscroll = function() { scrollFunction() };
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("scroll-to-top").style.display = "block";
+  } else {
+    document.getElementById("scroll-to-top").style.display = "none";
+  }
+}
+
+document.getElementById("scroll-to-top").onclick = function() {
+  scrollToTop(500); // Scroll to top with animation (500ms duration)
+};
+
+function scrollToTop(scrollDuration) {
+  var scrollStep = -window.scrollY / (scrollDuration / 15);
+  var scrollInterval = setInterval(function() {
+    if (window.scrollY !== 0) {
+      window.scrollBy(0, scrollStep);
+    } else {
+      clearInterval(scrollInterval);
+    }
+  }, 15);
+}
+</script>
+
 </body>
 </html>
