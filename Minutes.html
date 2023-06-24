@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
     <title>Minutes</title>
     <link rel="shortcut icon" href="title_logo.png" type="image/x-icon" />
-   
+    <link rel="stylesheet" href="nav.css">
+ 
     <style>
        body {
             background-color: #1f1f1f;
@@ -100,6 +104,34 @@
            </style>
 </head>
 <body>
+    <div class="nav" style="margin-left: -6px;">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            <a href="Minutes.html" target="_blank" style="color: #efefef;">Minutes</a>
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+            <a href='index.html' >Home</a>
+          <a href='Reports.html' >Reports</a>
+          <a href='Memo.html' >Memorandum</a>
+          <a href='Resume.html'  >Resume</a>
+          <a href='Procedure_and_policies.html'  >Procedure And Policies</a>
+          <a href='Thesis_and_Dissertation.html' >Thesis and Dissertation</a>
+          <a href='Notice.html' >Notice</a>
+          <a href='Agenda.html' >Agenda</a>
+        </div>
+    </div> 
+    <br><br><br>
+   
     <button class="back-button" onclick="goBack()">Back</button>
     <h1>Minutes of Meetings:</h1>
     <p>Minutes are written records of the proceedings and discussions that occur during meetings. They provide an overview of the topics discussed, decisions made, and actions assigned to participants.</p>
