@@ -44,6 +44,14 @@
   .nav > #nav-check {
     display: none;
   }
+
+  #img{
+    width:42px;
+    height:42px;
+    border-radius: 2px; 
+    border: 1px solid #000000;
+    overflow: hidden;
+  }
   
    
   @media (max-width:1078px) {
@@ -91,5 +99,14 @@
       height: calc(100vh - 50px);
       overflow-y: auto;
     }
+
+    #img{
+      width:42px;
+      height:42px;
+      border-radius: 50%; 
+      border: 1px solid #000000;
+      overflow: hidden;
+    }
+    
   }
   
